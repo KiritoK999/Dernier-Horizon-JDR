@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DERNIER HORIZON — outils du Maître du Jeu : tables quotidiennes et d'exploration, générateur de zone, générateurs rapides de créature, ruine et mission, commerce, réputation, récapitulatif de voyage et séance type.">
+    <title>DERNIER HORIZON — Outils MJ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <div class="bandeau-haut"></div>
+
+    <header class="site">
+        <div class="titre-site">
+            <span class="sigille">DH</span>
+            <h1>Dernier Horizon</h1>
+        </div>
+        <div class="sous-titre">Jeu de rôle de survie spatiale — Basé sur les mécaniques de D&D 5e</div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="regles.html">Règles</a></li>
+                <li><a href="personnages.html">Personnages</a></li>
+                <li><a href="colonie.html">Colonie</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="mj.html" class="actif">Outils MJ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenu">
+        <ul class="ancres">
+            <li><a href="#quotidiennes">Tables quotidiennes</a></li>
+            <li><a href="#tables-exploration">Tables d'exploration</a></li>
+            <li><a href="#zone">Générateur de zone</a></li>
+            <li><a href="#generateurs">Générateurs rapides</a></li>
+            <li><a href="#commerce">Commerce & réputation</a></li>
+            <li><a href="#voyage">Récapitulatif de voyage</a></li>
+            <li><a href="#seance">Séance type</a></li>
+        </ul>
+
+        <section id="quotidiennes">
+            <h2><span class="num">I.</span> Tables quotidiennes</h2>
+            <p>Ces deux tables rythment la vie de la base : la première se tire chaque jour lors de la <a href="colonie.html#gestion">résolution journalière</a>, la seconde à chaque jet de fiabilité raté d'une machine <a href="colonie.html#reparation">endommagée ou critique</a>.</p>
+            <div class="colonnes">
+                <div class="tableau-wrap">
+                    <table class="tableau">
+                        <caption>Événements — 1/D6 par jour, à la base</caption>
+                        <thead>
+                            <tr><th>D6</th><th>Événement</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Aucun événement</td></tr>
+                            <tr><td>2</td><td>Micro-panne : machine la plus endommagée, −1D6 PdD</td></tr>
+                            <tr><td>3</td><td>Faune curieuse aux abords (test de Discrétion du groupe pour éviter l'alerte)</td></tr>
+                            <tr><td>4</td><td>Signal radio faible (1 hex de direction, contenu au choix du MJ)</td></tr>
+                            <tr><td>5</td><td>PNJ blessé ou malade (jet de tâche du médecin)</td></tr>
+                            <tr><td>6</td><td>Météo renforcée (table <a href="exploration.html#meteo">météo D20</a>, +1 cran)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tableau-wrap">
+                    <table class="tableau">
+                        <caption>Pannes — jet de fiabilité raté</caption>
+                        <thead>
+                            <tr><th>D6</th><th>Panne</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Fuite d'air (colmatage DD 12 FOR ou Science, 1 h)</td></tr>
+                            <tr><td>2</td><td>Court-circuit (machine stop 1D4 h)</td></tr>
+                            <tr><td>3</td><td>Surchauffe (rendement −50 % aujourd'hui)</td></tr>
+                            <tr><td>4</td><td>Pièce grippée (nécessite 1 MEC)</td></tr>
+                            <tr><td>5</td><td>Alarme erronée (panique, Moral −1 si répété)</td></tr>
+                            <tr><td>6</td><td>Panne en chaîne (la machine suivante dans les priorités subit aussi un incident)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="tables-exploration">
+            <h2><span class="num">II.</span> Tables d'exploration</h2>
+            <p>À lancer pour chaque <a href="exploration.html#exploration">hex exploré</a> (ressources) et chaque jour de <a href="exploration.html#exploration">voyage</a> (rencontres, chance de 1/D6). M = niveau de menace de la zone.</p>
+            <div class="colonnes">
+                <div class="tableau-wrap">
+                    <table class="tableau">
+                        <caption>Ressources — par hex exploré, menace M</caption>
+                        <thead>
+                            <tr><th>D6</th><th>Ressource trouvée</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Rien</td></tr>
+                            <tr><td>2</td><td>Ferraille (1D4 FER)</td></tr>
+                            <tr><td>3</td><td>Alliage (1D4 × M ALL)</td></tr>
+                            <tr><td>4</td><td>Composants (1D4 COM)</td></tr>
+                            <tr><td>5</td><td>Eau ou glace (1D4 je) ou matières biologiques (1D4 BIO)</td></tr>
+                            <tr><td>6</td><td>Gisement durable : le MJ note un site (production par jour de travail d'une équipe)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tableau-wrap">
+                    <table class="tableau">
+                        <caption>Rencontres — par jour de voyage, menace M</caption>
+                        <thead>
+                            <tr><th>D6</th><th>Rencontre</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Créature dominante du biome (Menace M)</td></tr>
+                            <tr><td>2</td><td>Meute ou petite faune (Menace M−1, ×4 individus)</td></tr>
+                            <tr><td>3</td><td>Trace ou reste : indice écologique, pas de combat</td></tr>
+                            <tr><td>4</td><td>Faction humaine (patrouille : réaction selon la <a href="exploration.html#factions">Réputation</a>)</td></tr>
+                            <tr><td>5</td><td>Danger environnemental (crevasse, geiser, gaz)</td></tr>
+                            <tr><td>6</td><td>Phénomène rare (signal, artefact, phénomène de la ligne 20 de la <a href="exploration.html#meteo">table météo</a>)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="zone">
+            <h2><span class="num">III.</span> Générateur de zone</h2>
+            <p>Pour créer un hex, lancez ou choisissez, dans l'ordre :</p>
+            <ul class="puces">
+                <li><span class="nom">1. Biome + caractéristique singulière :</span> tirez le <a href="exploration.html#biomes">biome</a> (D10) puis une caractéristique singulière (table ci-dessous).</li>
+                <li><span class="nom">2. Niveau de menace (1–5) :</span> il croît avec la distance à la base.</li>
+                <li><span class="nom">3. Ressource notable :</span> 1D4 unités par niveau de menace + spécificité du biome.</li>
+                <li><span class="nom">4. Événement en cours :</span> table de <a href="#tables-exploration">rencontres</a> si exploration détaillée.</li>
+            </ul>
+            <div class="chiffres">
+                <div class="chiffre">
+                    <span class="valeur">1</span>
+                    <span class="legende">hex 1–2 de la base</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">2</span>
+                    <span class="legende">hex 3–5</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">3</span>
+                    <span class="legende">hex 6–9</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">4</span>
+                    <span class="legende">hex 10–15</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">5</span>
+                    <span class="legende">au-delà</span>
+                </div>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Caractéristique singulière (D10)</caption>
+                    <thead>
+                        <tr><th>D10</th><th>Caractéristique</th><th>D10</th><th>Caractéristique</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Anomalie magnétique</td><td>6</td><td>Gisement de minerai</td></tr>
+                        <tr><td>2</td><td>Colonie de créatures</td><td>7</td><td>Champ de débris</td></tr>
+                        <tr><td>3</td><td>Épave récente</td><td>8</td><td>Structure extraterrestre active</td></tr>
+                        <tr><td>4</td><td>Ruine ancienne</td><td>9</td><td>Camp d'une faction</td></tr>
+                        <tr><td>5</td><td>Source d'eau</td><td>10</td><td>Zone stérile et silencieuse</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="generateurs">
+            <h2><span class="num">IV.</span> Générateurs rapides</h2>
+
+            <h3>Générateur de créature</h3>
+            <p>Tirez une taille (D6) et une adaptation (D10), puis calculez le statblock : la Menace suit la distance à la base.</p>
+            <div class="colonnes">
+                <div class="tableau-wrap">
+                    <table class="tableau">
+                        <caption>Taille (D6)</caption>
+                        <thead>
+                            <tr><th>D6</th><th>Taille</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1–2</td><td>Minuscule ou petite</td></tr>
+                            <tr><td>3–4</td><td>Moyenne</td></tr>
+                            <tr><td>5</td><td>Grande</td></tr>
+                            <tr><td>6</td><td>Énorme</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tableau-wrap">
+                    <table class="tableau">
+                        <caption>Adaptation (D10)</caption>
+                        <thead>
+                            <tr><th>D10</th><th>Adaptation</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Blindée</td></tr>
+                            <tr><td>2</td><td>Volante</td></tr>
+                            <tr><td>3</td><td>Souterraine</td></tr>
+                            <tr><td>4</td><td>Toxique</td></tr>
+                            <tr><td>5</td><td>Imitatrice</td></tr>
+                            <tr><td>6</td><td>Parasite</td></tr>
+                            <tr><td>7</td><td>Ultrarapide</td></tr>
+                            <tr><td>8</td><td>Bioluminescente</td></tr>
+                            <tr><td>9</td><td>Sonique</td></tr>
+                            <tr><td>10</td><td>Symbiotique</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="formule">PV = Menace × 15 ± 10 · CA = 12 + Menace · Dégâts = 1D6 par tranche de 2 points de Menace (arrondi vers le haut)</div>
+            <p>Ajoutez un comportement et une faiblesse télégraphiée, dans l'esprit du <a href="exploration.html#bestiaire">bestiaire</a>.</p>
+
+            <h3>Générateur de ruine</h3>
+            <p>Un seul D6, lu sur les trois colonnes.</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Ruine (D6)</caption>
+                    <thead>
+                        <tr><th>D6</th><th>Origine</th><th>État</th><th>Habitants</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Humaine</td><td>Intacte</td><td>Vide</td></tr>
+                        <tr><td>2</td><td>Précurseure</td><td>Effondrée</td><td>Faune</td></tr>
+                        <tr><td>3</td><td>Biologique</td><td>Enfouie</td><td>Faction</td></tr>
+                        <tr><td>4</td><td>Militaire</td><td>Sous-marine</td><td>Gardien</td></tr>
+                        <tr><td>5</td><td>Scientifique</td><td>—</td><td>Pièges</td></tr>
+                        <tr><td>6</td><td>Inconnue</td><td>—</td><td>Survivant</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panier alerte">
+                <h3>Butin de ruine</h3>
+                <p>2D4 ressources + 1D6 PR ou 1 plan.</p>
+            </div>
+
+            <h3>Générateur de mission (D8)</h3>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Mission (D8)</caption>
+                    <thead>
+                        <tr><th>D8</th><th>Mission</th><th>D8</th><th>Mission</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Retrouver une capsule émettrice</td><td>5</td><td>Voler des plans à une faction</td></tr>
+                        <tr><td>2</td><td>Nettoyer une route pour le convoi</td><td>6</td><td>Enquêter sur une disparition</td></tr>
+                        <tr><td>3</td><td>Capturer un spécimen vivant</td><td>7</td><td>Réparer une balise lointaine</td></tr>
+                        <tr><td>4</td><td>Escorter un PNJ</td><td>8</td><td>Prélever un artefact dans une ruine gardée</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="commerce">
+            <h2><span class="num">V.</span> Commerce & réputation</h2>
+            <p>Les <a href="exploration.html#factions">factions</a> vendent ce qu'elles produisent et achètent ce qui leur manque. Prix de référence : 1 RARE ≈ 10 ALL ≈ 20 jr d'équivalent ; un Persuasion réussi (DD 10 + Réputation opposée) décale les prix d'un cran favorable.</p>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table de commerce</caption>
+                    <thead>
+                        <tr><th>Marchandise</th><th>Prix indicatif</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Munitions</td><td>×2</td></tr>
+                        <tr><td>Rations</td><td>×2 (si la faction a faim)</td></tr>
+                        <tr><td>Ressource RARE</td><td>Jamais vendue (×4 en échange)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Chaque transaction réussie :</span> +1 Réputation.</li>
+                <li><span class="nom">Journal de faction :</span> une ligne par faction, avec Réputation, effectif, projet en cours et prochaine action — les factions agissent une fois par semaine, même en l'absence des joueurs.</li>
+                <li><span class="nom">Évolution :</span> chaque action notable vaut ±1 (commerce honnête, sauvetage, cadeaux, trahison, vol, meurtre) ; l'échec d'une promesse double le malus.</li>
+            </ul>
+        </section>
+
+        <section id="voyage">
+            <h2><span class="num">VI.</span> Récapitulatif de voyage</h2>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>L'essentiel d'une expédition</caption>
+                    <thead>
+                        <tr><th>Élément</th><th>Règle</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Vitesse par terrain</td><td><a href="exploration.html#exploration">Exploration</a> — allure et navigation</td></tr>
+                        <tr><td>O₂ de voyage</td><td><a href="regles.html#oxygene">Oxygène</a> — combinaisons, véhicules, réserves</td></tr>
+                        <tr><td>Navigation</td><td>Survie DD 12/jour de voyage ; échec = 10 km de dérive ou 1D4 h perdues</td></tr>
+                        <tr><td>Bivouac</td><td>Camp de fortune : 2 jp/personne/nuit, repos court seulement</td></tr>
+                        <tr><td>Campement pressurisé</td><td>Repos long possible</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="seance">
+            <h2><span class="num">VII.</span> Séance type & fils rouges</h2>
+            <p>La <a href="index.html">boucle de gameplay</a> se déroule en quatre temps, puis recommence — vers des hex plus lointains et des menaces plus élevées.</p>
+            <div class="grille">
+                <div class="carte danger">
+                    <h3>1. Accroche</h3>
+                    <p>Un événement lance la séance : météo, signal, intrusion.</p>
+                </div>
+                <div class="carte o2">
+                    <h3>2. Expédition</h3>
+                    <p>Exploration et récupération, sous tension de ressources.</p>
+                </div>
+                <div class="carte tech">
+                    <h3>3. Retour & gestion</h3>
+                    <p>Résolution journalière, stocks, chantiers, usure, événement du jour.</p>
+                </div>
+                <div class="carte bio">
+                    <h3>4. Montée en puissance</h3>
+                    <p>Nouveau bâtiment, recette, technologie ou PNJ.</p>
+                </div>
+            </div>
+            <p>Le MJ lie les <a href="index.html">phases de la campagne</a> entre elles par des fils rouges :</p>
+            <ul class="puces">
+                <li>Le signal étrange qui revient périodiquement.</li>
+                <li>La faction qui grandit, quelque part sur la carte.</li>
+                <li>La structure extraterrestre au nord.</li>
+                <li>La maladie qui revient chaque saison.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site">
+        <div class="pied">
+            <span class="sceau">Dernier Horizon</span>
+            <span>Jeu de rôle de survie spatiale</span>
+            <span>Basé sur les mécaniques de D&D 5e</span>
+        </div>
+    </footer>
+</body>
+</html>

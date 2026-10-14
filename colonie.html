@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DERNIER HORIZON — la colonie : modules, points de structure, moral, construction, craft, réparation et pannes, recherche technologique, gestion de base et équipage PNJ.">
+    <title>DERNIER HORIZON — La Colonie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <div class="bandeau-haut"></div>
+
+    <header class="site">
+        <div class="titre-site">
+            <span class="sigille">DH</span>
+            <h1>Dernier Horizon</h1>
+        </div>
+        <div class="sous-titre">Jeu de rôle de survie spatiale — Basé sur les mécaniques de D&D 5e</div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="regles.html">Règles</a></li>
+                <li><a href="personnages.html">Personnages</a></li>
+                <li><a href="colonie.html" class="actif">Colonie</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="mj.html">Outils MJ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenu">
+        <ul class="ancres">
+            <li><a href="#base">La base</a></li>
+            <li><a href="#modules">Modules</a></li>
+            <li><a href="#moral">Moral</a></li>
+            <li><a href="#construction">Construction</a></li>
+            <li><a href="#craft">Craft</a></li>
+            <li><a href="#reparation">Réparation</a></li>
+            <li><a href="#recherche">Recherche</a></li>
+            <li><a href="#gestion">Gestion</a></li>
+            <li><a href="#equipage">Équipage</a></li>
+        </ul>
+
+        <section id="base">
+            <h2><span class="num">I.</span> La base</h2>
+            <p>La base démarre comme une épave sécurisée et devient une colonie. Les joueurs décident où construire, quoi construire, quand améliorer, comment organiser l'espace, quelles machines installer et quelles technologies rechercher.</p>
+            <ul class="puces">
+                <li><span class="nom">Organisation :</span> la base se dessine sur un plan simple de modules. Chaque module = 1 pièce de 3×3 m.</li>
+                <li><span class="nom">Pièces adjacentes :</span> elles partagent l'air, l'énergie et les dégâts de dépressurisation. Un sas double par tranche de 5 modules est recommandé.</li>
+            </ul>
+        </section>
+
+        <section id="modules">
+            <h2><span class="num">II.</span> Modules de base</h2>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Catalogue des modules</caption>
+                    <thead>
+                        <tr><th>Module</th><th>Fonction</th><th>Remarques</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Habitation</td><td>Sommeil, repos long (+ dés de vie), moral</td><td>4 couchages/module</td></tr>
+                        <tr><td>Centre de contrôle</td><td>Gestion, communications, carte, priorités</td><td>Portée radio : 50 km</td></tr>
+                        <tr><td>Générateur</td><td>Production d'énergie</td><td>Risque d'incendie si critique</td></tr>
+                        <tr><td>Batterie</td><td>Stockage d'énergie</td><td>Peut exploser (6D6) si détruite</td></tr>
+                        <tr><td>Filtration</td><td>Production et recyclage d'oxygène</td><td>Priorité vitale</td></tr>
+                        <tr><td>Réservoir d'eau</td><td>Stockage H₂O (100 je)</td><td>Rupture = inondation + gel</td></tr>
+                        <tr><td>Atelier</td><td>Fabrication, réparation, munitions</td><td>Nécessaire au craft</td></tr>
+                        <tr><td>Laboratoire</td><td>Recherches, analyses</td><td>—</td></tr>
+                        <tr><td>Infirmerie</td><td>Soins, chirurgie, maladies</td><td>Bonus aux soins</td></tr>
+                        <tr><td>Serre</td><td>Nourriture, +1 jp O₂</td><td>Nécessite eau + énergie</td></tr>
+                        <tr><td>Hangar</td><td>Stocker, réparer, abriter véhicules</td><td>Véhicule protégé des intempéries</td></tr>
+                        <tr><td>Défenses</td><td>Tourelles, alarmes, murs</td><td>Alarme = alerte automatique en cas d'intrusion</td></tr>
+                        <tr><td>Sas / couloir</td><td>Pressurisation, liaison</td><td>Obligatoire entre modules distants</td></tr>
+                        <tr><td>Zone de stockage</td><td>+100 unités de ressources</td><td>Conteneurs scellés</td></tr>
+                        <tr><td>Fonderie / recyclerie</td><td>Ferraille → alliages</td><td>Tech niv. 2</td></tr>
+                        <tr><td>Foreuse / puits</td><td>Eau souterraine</td><td>Tech niv. 2</td></tr>
+                        <tr><td>Quartier des colons</td><td>Loger des PNJ (6/module)</td><td>Moral de colonie</td></tr>
+                        <tr><td>Bassin / conserverie</td><td>Longue conservation</td><td>Évite le gaspillage</td></tr>
+                        <tr><td>Poste avancé (hors base)</td><td>Camp de recharge pour expéditions</td><td>Minuscule filtration + réserves</td></tr>
+                        <tr><td>Canons / silo de signaux</td><td>Deux fins de campagne possibles</td><td>Tech niv. 5–6</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Chaque module a des <span class="nom">points de structure (PS)</span>. Les dégâts d'explosion, de faune géante ou d'assaut les réduisent ; à 0, le module se dépressurise.</p>
+            <div class="chiffres">
+                <div class="chiffre">
+                    <span class="valeur">20</span>
+                    <span class="legende">PS — module de fortune</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">40</span>
+                    <span class="legende">PS — module standard</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">80</span>
+                    <span class="legende">PS — module renforcé</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="moral">
+            <h2><span class="num">III.</span> Moral de la colonie</h2>
+            <p>Un compteur collectif de <span class="nom">Moral (0–10, départ 5)</span> évolue selon les événements :</p>
+            <ul class="puces">
+                <li><span class="nom">+1 :</span> semaine sans victime, repas chauds, festival, expédition réussie.</li>
+                <li><span class="nom">−1 :</span> mort d'un PNJ, rationnement prolongé, nuit de panne de chauffage, dispute publique.</li>
+            </ul>
+            <div class="colonnes">
+                <div class="panier alerte">
+                    <h3>Moral ≤ 2</h3>
+                    <p>Les PNJ travaillent avec un désavantage ; désertions possibles (test de Persuasion DD 15 pour retenir quelqu'un).</p>
+                </div>
+                <div class="panier bio">
+                    <h3>Moral ≥ 8</h3>
+                    <p>Bonus de +2 sur toutes les tâches de colonie.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="construction">
+            <h2><span class="num">IV.</span> Construction</h2>
+            <p>Chaque bâtiment indique : <span class="nom">coût en ressources</span> · <span class="nom">temps de construction</span> · <span class="nom">consommation énergétique</span> · <span class="nom">conditions</span> · <span class="nom">prérequis technologiques</span> · <span class="nom">capacité/fonction</span>.</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Table de construction (extrait du catalogue)</caption>
+                    <thead>
+                        <tr><th>Bâtiment</th><th>Coût</th><th>Temps</th><th>Énergie/j</th><th>Conditions</th><th>Prérequis</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sas de fortune</td><td>4 ALL</td><td>4 h</td><td>0</td><td>—</td><td>—</td></tr>
+                        <tr><td>Module d'habitation</td><td>8 ALL, 2 MEC</td><td>12 h</td><td>2</td><td>Zone stabilisée</td><td>—</td></tr>
+                        <tr><td>Panneaux solaires de fortune</td><td>4 ALL, 2 COM</td><td>6 h</td><td>0 (produit 4)</td><td>Exposition au soleil</td><td>—</td></tr>
+                        <tr><td>Groupe électrogène</td><td>6 MEC, 2 COM</td><td>8 h</td><td>produit 20</td><td>1 CARB/jour</td><td>—</td></tr>
+                        <tr><td>Filtration v2</td><td>6 ALL, 3 COM, 2 MEC</td><td>16 h</td><td>8 (produit 8 jp)</td><td>Atelier actif</td><td>Tech 1</td></tr>
+                        <tr><td>Réservoir d'eau</td><td>5 ALL</td><td>4 h</td><td>0</td><td>—</td><td>—</td></tr>
+                        <tr><td>Atelier v1</td><td>10 ALL, 3 MEC, 2 COM</td><td>16 h</td><td>4</td><td>2 ouvriers</td><td>—</td></tr>
+                        <tr><td>Laboratoire v1</td><td>12 ALL, 4 COM</td><td>20 h</td><td>6</td><td>1 scientifique PNJ</td><td>Tech 1</td></tr>
+                        <tr><td>Infirmerie v1</td><td>10 ALL, 4 COM</td><td>16 h</td><td>4</td><td>—</td><td>—</td></tr>
+                        <tr><td>Serre v1</td><td>8 ALL, 2 MEC, graines</td><td>16 h</td><td>4 + 2 je/j</td><td>Source d'eau</td><td>Tech 1</td></tr>
+                        <tr><td>Mur défensif (10 m)</td><td>12 ALL</td><td>8 h</td><td>0</td><td>—</td><td>—</td></tr>
+                        <tr><td>Tourelle automatique</td><td>8 ALL, 4 COM, 2 MEC</td><td>12 h</td><td>3</td><td>Détection</td><td>Tech 2</td></tr>
+                        <tr><td>Hangar</td><td>15 ALL, 4 MEC</td><td>24 h</td><td>2</td><td>—</td><td>—</td></tr>
+                        <tr><td>Fonderie</td><td>15 ALL, 3 MEC</td><td>24 h</td><td>8</td><td>—</td><td>Tech 2</td></tr>
+                        <tr><td>Foreuse</td><td>10 ALL, 4 MEC, foret</td><td>20 h</td><td>10</td><td>Gisement repéré</td><td>Tech 2</td></tr>
+                        <tr><td>Quartier des colons</td><td>12 ALL</td><td>20 h</td><td>3</td><td>Moral ≥ 5</td><td>Tech 2</td></tr>
+                        <tr><td>Réacteur de l'épave (réparé)</td><td>20 MEC, 6 COM, 2 RARE</td><td>1 semaine</td><td>produit 40</td><td>Science DD 18</td><td>Tech 3</td></tr>
+                        <tr><td>Balise orbitale</td><td>20 ALL, 10 COM, 5 RARE</td><td>2 semaines</td><td>20</td><td>Zone dégagée</td><td>Tech 5</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Règles de chantier</h3>
+            <ul class="puces">
+                <li>Un chantier mobilise 1 personnel ou PNJ superviseur + 1 ouvrier par tranche de coût (un chantier de 16 h à deux ouvriers finit en 8 h).</li>
+                <li>Chaque tranche de 8 h de chantier = 1 jr + 1 je consommés par ouvrier.</li>
+                <li>Un bâtiment non terminé peut être annulé : on récupère 50 % des ressources engagées.</li>
+                <li><span class="nom">Améliorations :</span> un bâtiment peut être upgradé au niveau supérieur (v1 → v2 → v3) pour la moitié du coût et du temps d'un nouveau ; chaque niveau double généralement la capacité et ajoute +20 PS.</li>
+            </ul>
+        </section>
+
+        <section id="craft">
+            <h2><span class="num">V.</span> Craft (fabrication)</h2>
+            <p>Une recette exige : des ressources + un bâtiment (atelier, labo, infirmerie, hangar) + une compétence + un temps + éventuellement un plan ou une technologie.</p>
+            <div class="chiffres">
+                <div class="chiffre">
+                    <span class="valeur">10</span>
+                    <span class="legende">DD facile</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">13</span>
+                    <span class="legende">DD courant</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">16</span>
+                    <span class="legende">DD avancé</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">19+</span>
+                    <span class="legende">DD prototype</span>
+                </div>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Échec :</span> il ne consomme que la moitié des ressources ; un échec de 5+ détruit les composants.</li>
+                <li><span class="nom">Réussite de 5+ :</span> fabrique un exemplaire de qualité (+1 PV d'objet ou +10 % autonomie).</li>
+            </ul>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Extrait du catalogue de recettes</caption>
+                    <thead>
+                        <tr><th>Objet</th><th>Coût</th><th>Bâtiment</th><th>Compétence</th><th>Temps</th><th>DD</th><th>Prérequis</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Munitions légères (10)</td><td>1 ALL</td><td>Atelier</td><td>Science</td><td>1 h</td><td>10</td><td>—</td></tr>
+                        <tr><td>Bouteille d'O₂ (4 h d'air)</td><td>2 ALL, 1 MEC</td><td>Atelier</td><td>Science</td><td>2 h</td><td>12</td><td>—</td></tr>
+                        <tr><td>Lampe / torche</td><td>1 COM, 1 ALL</td><td>—</td><td>—</td><td>30 min</td><td>8</td><td>—</td></tr>
+                        <tr><td>Batterie rechargeable (20 ÉNE)</td><td>2 COM, 1 ALL</td><td>Atelier</td><td>Science</td><td>4 h</td><td>12</td><td>—</td></tr>
+                        <tr><td>Arme de mêlée improvisée</td><td>2 ALL</td><td>—</td><td>—</td><td>20 min</td><td>8</td><td>—</td></tr>
+                        <tr><td>Fusil improvisé (D8, 10 munitions)</td><td>4 ALL, 1 COM</td><td>Atelier</td><td>Science</td><td>6 h</td><td>14</td><td>Plan de fortune</td></tr>
+                        <tr><td>Gilet de plaque (CA 13)</td><td>5 ALL</td><td>Atelier</td><td>Science</td><td>6 h</td><td>12</td><td>—</td></tr>
+                        <tr><td>Armure renforcée v2 (CA 15)</td><td>8 ALL, 2 MEC</td><td>Atelier</td><td>Science</td><td>10 h</td><td>14</td><td>Tech 1</td></tr>
+                        <tr><td>Combinaison étanche (4 h O₂)</td><td>6 ALL, 2 COM</td><td>Atelier</td><td>Science</td><td>12 h</td><td>13</td><td>—</td></tr>
+                        <tr><td>Antibiotiques (3 doses)</td><td>1 BIO</td><td>Infirmerie</td><td>Médecine</td><td>6 h</td><td>13</td><td>—</td></tr>
+                        <tr><td>Antidote universel</td><td>2 BIO, 1 MED</td><td>Infirmerie + labo</td><td>Médecine</td><td>12 h</td><td>15</td><td>Tech 1</td></tr>
+                        <tr><td>Drone éclaireur</td><td>4 COM, 2 MEC, 1 batterie</td><td>Atelier</td><td>Investigation</td><td>16 h</td><td>14</td><td>Tech 1</td></tr>
+                        <tr><td>Drone de combat</td><td>6 COM, 3 MEC, armes</td><td>Atelier</td><td>Investigation</td><td>24 h</td><td>16</td><td>Tech 2, plan</td></tr>
+                        <tr><td>Char-buggy léger</td><td>20 ALL, 10 MEC</td><td>Hangar</td><td>Science</td><td>3 jours</td><td>16</td><td>Tech 2, plan</td></tr>
+                        <tr><td>Tourelle portable</td><td>8 COM, 3 MEC</td><td>Atelier</td><td>Science</td><td>20 h</td><td>15</td><td>Tech 2</td></tr>
+                        <tr><td>Exosquelette (FOR +2 en port, D8 dégâts mêlée)</td><td>12 ALL, 6 MEC, 4 COM</td><td>Atelier v2</td><td>Science</td><td>1 semaine</td><td>17</td><td>Tech 3, plan</td></tr>
+                        <tr><td>Implant : adrénaline (1×/jour, action bonus)</td><td>3 RARE, 2 MED</td><td>Infirmerie v2 + labo</td><td>Médecine</td><td>2 semaines</td><td>18</td><td>Tech 3</td></tr>
+                        <tr><td>Implant : poumons filtrants (résistance asphyxie)</td><td>4 RARE, 3 MED</td><td>Infirmerie v2 + labo</td><td>Médecine</td><td>3 semaines</td><td>18</td><td>Tech 4</td></tr>
+                        <tr><td>Blindage de base (tous modules +20 PS)</td><td>20 ALL</td><td>Atelier v2</td><td>Science</td><td>1 semaine</td><td>—</td><td>Tech 2</td></tr>
+                        <tr><td>Serre hydroponique v2 (nourrit 6)</td><td>10 ALL, 4 COM</td><td>Atelier</td><td>Science</td><td>2 jours</td><td>14</td><td>Tech 2</td></tr>
+                        <tr><td>Fusée-échantillon (1 charge orbitale)</td><td>40 ALL, 20 COM, 10 RARE</td><td>Hangar + atelier v3</td><td>Science / Science</td><td>1 mois</td><td>20</td><td>Tech 6</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Plans et déblocage</h3>
+            <ul class="puces">
+                <li>Les recettes de base (approvisionnement, munitions, armures légères) sont connues dès le départ.</li>
+                <li>Les recettes avancées exigent un plan (trouvé dans les épaves, ruines, sur les ennemis, ou offert par une faction) ou le niveau technologique correspondant.</li>
+                <li><span class="nom">Réciproque d'ingénierie :</span> 8 heures d'étude d'un objet avec un atelier permettent de le démonter et d'apprendre sa recette (jet Science DD 15 + l'objet est détruit, 50 % des ressources récupérées).</li>
+            </ul>
+        </section>
+
+        <section id="reparation">
+            <h2><span class="num">VI.</span> Réparation et pannes</h2>
+            <h3>Points de durabilité (PdD)</h3>
+            <p>Chaque machine importante a des PdD (ex. : épurateur 15, générateur 20, véhicule 30) et un seuil d'usure. L'usure s'accumule : 1 point par tranche de 10 jours de fonctionnement sans entretien, +1D4 par tempête, coup de chaleur, surtension, tir subi.</p>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>États d'une machine</caption>
+                    <thead>
+                        <tr><th>État</th><th>Seuil</th><th>Effets</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Fonctionnelle</td><td>PdD &gt; 66 %</td><td>—</td></tr>
+                        <tr><td>Endommagée</td><td>≤ 66 %</td><td>Rendement 50 % ; jets de fiabilité DD 10</td></tr>
+                        <tr><td>Critique</td><td>≤ 33 %</td><td>Rendement 25 % ; jets DD 13 ; peut s'aggraver (1D6/jour : 1–2 → hors service)</td></tr>
+                        <tr><td>Hors service</td><td>0</td><td>Ne fonctionne plus, réparable</td></tr>
+                        <tr><td>Détruite</td><td>négatif ou explosion</td><td>Non réparable ; on récupère la ferraille (1D4 FER)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Fiabilité</h3>
+            <p>Chaque machine a un score de <span class="nom">Fiabilité (F)</span> : de fortune F6, standard F9, militaire F12. Chaque jour, si la machine est Endommagée ou Critique, testez : D20 ≤ F = tout va bien ; D20 &gt; F = incident (bruit, panne partielle, fuite). Une machine à F18 ne tombe en panne que sur un 20.</p>
+            <h3>Diagnostiquer, réparer, améliorer</h3>
+            <ul class="puces">
+                <li><span class="nom">Diagnostic (10 min, Science DD 12) :</span> révèle l'état exact et la pièce fautive.</li>
+                <li><span class="nom">Réparer :</span> rend des PdD = coût en pièces (1 MEC ou 1 COM par tranche de 10 PdD manquants) + jet de Science (DD 10 Endommagée, DD 15 Critique, DD 18 Hors service) ; temps : 1 h par tranche de 10 PdD.</li>
+                <li><span class="nom">Remplacer un composant :</span> une machine Hors service exige une pièce spécifique (1 COM + 1 MEC, ou pièce récupérée sur une autre machine de même type — cannibalisation).</li>
+                <li><span class="nom">Améliorer :</span> +2 Fiabilité en permanence pour 2 COM et 8 h de travail (une fois par machine).</li>
+                <li><span class="nom">Automatiser (Tech 2) :</span> drones de maintenance réduisent l'usure à 1 point par 30 jours et diagnostiquent seuls.</li>
+            </ul>
+            <div class="citation">
+                « La plupart des pannes n'arrivent pas au hasard — elles arrivent quand la machine n'a pas été entretenue. Le MJ annonce l'usure visible (bruit, voyant, odeur) : les joueurs sont prévenus. »
+                <span class="attribution">— Le risque douce-amère</span>
+            </div>
+        </section>
+
+        <section id="recherche">
+            <h2><span class="num">VII.</span> Recherche technologique</h2>
+            <p>Le <span class="nom">niveau technologique</span> de la colonie (0–6) débouche sur des recettes, des bâtiments et des systèmes. Départ : niveau 0.</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>L'arbre technologique</caption>
+                    <thead>
+                        <tr><th>Niveau</th><th>Nom</th><th>Contenu (extraits)</th><th>Temps de recherche</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Survie</td><td>Filtration v2, serres, atelier v2, antidotes, drones éclaireurs, condenseurs</td><td>2 semaines de labo</td></tr>
+                        <tr><td>2</td><td>Industriel</td><td>Fonderie, foreuse, tourelles, véhicules, munitions avancées, maintenance automatisée</td><td>1 mois</td></tr>
+                        <tr><td>3</td><td>Scientifique</td><td>Réacteur réparé, exosquelettes, implants basiques, blindage, scanner longue portée</td><td>2 mois</td></tr>
+                        <tr><td>4</td><td>Avancé</td><td>Implants majeurs, armes énergétiques avancées, véhicules de reconnaissance lourd, capteurs de vie</td><td>3 mois</td></tr>
+                        <tr><td>5</td><td>Extraterrestre</td><td>Technologies des ruines étudiées (le MJ choisit : énergie, matériaux, médecine, signaux) ; balise orbitale</td><td>4 mois + artefacts</td></tr>
+                        <tr><td>6</td><td>Départ</td><td>Fusée-échantillon, capsule de sauvetage orbitale, ou autonomie complète (bases v3 partout)</td><td>6 mois + conditions de campagne</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Procédure</h3>
+            <ul class="puces">
+                <li><span class="nom">Chercheurs :</span> un personnage ou PNJ affecté au laboratoire = 1 point de recherche (PR)/jour ; le Scientifique en vaut 2.</li>
+                <li><span class="nom">Coût :</span> niveau tech visé × 7 = PR requis (niveau 1 = 7 PR, niveau 6 = 42 PR).</li>
+                <li><span class="nom">Accélérateurs :</span> étudier des plans, ruines ou artefacts donne des PR directs (1D6 par site ou artefact) ; capturer un spécialiste ennemi ou convaincre un PNJ scientifique donne +1 PR/jour.</li>
+                <li><span class="nom">Paliers technologiques :</span> on ne peut pas chercher le niveau 4 sans le 3 (sauf plan spécifique, qui donne la recette sans le niveau).</li>
+            </ul>
+        </section>
+
+        <section id="gestion">
+            <h2><span class="num">VIII.</span> Gestion de base par les joueurs</h2>
+            <p>Entre deux expéditions, le groupe tient une <span class="nom">séance de gestion</span> (30 min de jeu réel, couvrant 1 journée ou 1 semaine). À chaque période, les joueurs décident :</p>
+            <ul class="puces">
+                <li><span class="nom">Énergie :</span> quels systèmes allumer/couper, ordre des priorités.</li>
+                <li><span class="nom">Production :</span> quelles machines faire tourner (fonderie, foreuse, condenseurs).</li>
+                <li><span class="nom">Chantiers :</span> quel bâtiment lancer / améliorer.</li>
+                <li><span class="nom">Recherche :</span> quel niveau viser, quels chercheurs affecter.</li>
+                <li><span class="nom">Fabrication :</span> quelles recettes lancer à l'atelier.</li>
+                <li><span class="nom">Expédition :</span> quelle zone explorer, avec qui, avec quelles réserves.</li>
+                <li><span class="nom">Équipage :</span> quel PNJ à quel poste.</li>
+                <li><span class="nom">Défenses :</span> alertes, patrouilles, murs, tourelles actives.</li>
+            </ul>
+
+            <h3>Tâches de colonie (jets)</h3>
+            <p>Chaque PNJ ou personnage affecté fait <span class="nom">un jet de tâche par jour</span> : D20 + modificateur de caractéristique + bonus de poste. Le bonus de Moral s'applique.</p>
+            <div class="formule">≤ 9 : échec (demi-production) · 10–16 : réussite (production standard) · 17+ : réussite critique (+50 % ou +1 PR)</div>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Tâches de colonie</caption>
+                    <thead>
+                        <tr><th>Tâche</th><th>Caractéristique</th><th>Production standard</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cultiver (serre)</td><td>SAG</td><td>3 jr/jour/module</td></tr>
+                        <tr><td>Récupérer l'eau</td><td>INT</td><td>3 je/jour/condenseur</td></tr>
+                        <tr><td>Entretenir</td><td>INT</td><td>−1 usure sur 1 machine</td></tr>
+                        <tr><td>Construire</td><td>FOR</td><td>Avance le chantier</td></tr>
+                        <tr><td>Fabriquer</td><td>INT</td><td>1 recette ≤ DD 13/jour</td></tr>
+                        <tr><td>Chercher</td><td>INT</td><td>1 PR</td></tr>
+                        <tr><td>Soigner</td><td>SAG</td><td>1D4 PV à 2 patients, −1 jour de séquelle</td></tr>
+                        <tr><td>Monter la garde</td><td>SAG</td><td>Alerte en cas de raid (DD 15)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Résolution journalière (5 minutes)</h3>
+            <ul class="puces">
+                <li><span class="nom">1. Consommation :</span> eau, rations, O₂, énergie (tableau de la fiche de colonie).</li>
+                <li><span class="nom">2. Production :</span> machines actives, serres, condenseurs.</li>
+                <li><span class="nom">3. Usure :</span> avancer les compteurs PdD, tester les machines Endommagées/Critiques.</li>
+                <li><span class="nom">4. Jets de tâche</span> des PNJ (le MJ lance ou prend 10).</li>
+                <li><span class="nom">5. Événement du jour</span> (1 sur D6 — voir Outils MJ).</li>
+                <li><span class="nom">6. Factions :</span> progression de leurs projets (1 action/semaine).</li>
+            </ul>
+        </section>
+
+        <section id="equipage">
+            <h2><span class="num">IX.</span> Équipage et PNJ</h2>
+            <p>Les PNJ ont : un archétype (Ingénieur, Médecin, Scientifique, Soldat, Ouvrier, Technicien, Pilote), 2 stats notables, des PV (5 + niveau de colonie), une loyauté (1–5) et une spécialité.</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Statblocks de PNJ simplifiés</caption>
+                    <thead>
+                        <tr><th>PNJ type</th><th>Bonus de poste</th><th>Spécialité</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ingénieur</td><td>INT +2</td><td>Répare 10 PdD/jour sans test</td></tr>
+                        <tr><td>Médecin</td><td>Médecine +2</td><td>Soins d'infirmerie quotidiens automatiques</td></tr>
+                        <tr><td>Scientifique</td><td>Science +2</td><td>1 PR/jour</td></tr>
+                        <tr><td>Soldat</td><td>Attaque +2</td><td>Défend la base en cas d'attaque (CA 14, PV 10)</td></tr>
+                        <tr><td>Ouvrier</td><td>FOR +1</td><td>Avance n'importe quel chantier</td></tr>
+                        <tr><td>Technicien</td><td>INT +1</td><td>Empêche 1 usure par jour</td></tr>
+                        <tr><td>Pilote</td><td>DEX +2 (pilotage)</td><td>Conduit les expéditions, +10 km/jour</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Loyauté et moral</h3>
+            <ul class="puces">
+                <li>La loyauté évolue comme la Réputation : sauvetage +1, trahison −2, maison promise +1, nourriture réservée −1.</li>
+                <li><span class="nom">Loyauté ≤ 1 :</span> travail minimal, vol possible, départ.</li>
+                <li>Un PNJ mort inflige −1 Moral de colonie, la perte de son poste <span class="nom">et</span> un deuil narratif — le MJ doit le jouer.</li>
+            </ul>
+            <h3>Recruter</h3>
+            <p>Nouveaux PNJ via : capsules séparées découvertes, factions amies, sauvetages, naissances (campagnes longues). Un PNJ recruté consomme 1 jr, 1 je, 1 jp/jour comme tout le monde, mais rapporte bien plus.</p>
+        </section>
+    </main>
+
+    <footer class="site">
+        <div class="pied">
+            <span class="sceau">Dernier Horizon</span>
+            <span>Jeu de rôle de survie spatiale</span>
+            <span>Basé sur les mécaniques de D&D 5e</span>
+        </div>
+    </footer>
+</body>
+</html>

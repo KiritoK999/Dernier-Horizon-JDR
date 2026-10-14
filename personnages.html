@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DERNIER HORIZON — création de personnages : caractéristiques, compétences, 8 lignées humaines, 8 cultures, 7 classes avec tables de progression, historiques, dons, progression et mort définitive.">
+    <title>DERNIER HORIZON — Personnages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <div class="bandeau-haut"></div>
+
+    <header class="site">
+        <div class="titre-site">
+            <span class="sigille">DH</span>
+            <h1>Dernier Horizon</h1>
+        </div>
+        <div class="sous-titre">Jeu de rôle de survie spatiale — Basé sur les mécaniques de D&D 5e</div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="regles.html">Règles</a></li>
+                <li><a href="personnages.html" class="actif">Personnages</a></li>
+                <li><a href="colonie.html">Colonie</a></li>
+                <li><a href="exploration.html">Exploration</a></li>
+                <li><a href="mj.html">Outils MJ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenu">
+        <ul class="ancres">
+            <li><a href="#creation">Création</a></li>
+            <li><a href="#lignees">Lignées</a></li>
+            <li><a href="#cultures">Cultures</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#historiques">Historiques</a></li>
+            <li><a href="#dons">Dons</a></li>
+            <li><a href="#progression">Progression</a></li>
+            <li><a href="#mort">Mort</a></li>
+        </ul>
+
+        <section id="creation">
+            <h2><span class="num">I.</span> Création de personnages</h2>
+            <h3>Caractéristiques</h3>
+            <p>Répartition standard : 15, 14, 13, 12, 10, 8 (ou achat de points, ou 4D6-garde-les-3). Le +2/+1 (ou +1/+1/+1) vient de la culture et se répartit <span class="nom">uniquement parmi les trois caractéristiques de cette culture</span>.</p>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Les six caractéristiques</caption>
+                    <thead>
+                        <tr><th>Caractéristique</th><th>Usage</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Force (FOR)</td><td>Athlétisme</td></tr>
+                        <tr><td>Dextérité (DEX)</td><td>Acrobatie, Discrétion, Escamotage</td></tr>
+                        <tr><td>Constitution (CON)</td><td>Jets de Constitution uniquement</td></tr>
+                        <tr><td>Intelligence (INT)</td><td>Science, Histoire, Investigation, Nature</td></tr>
+                        <tr><td>Sagesse (SAG)</td><td>Dressage, Intuition, Médecine, Perception, Survie</td></tr>
+                        <tr><td>Charisme (CHA)</td><td>Intimidation, Persuasion, Représentation, Tromperie</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Compétences</h3>
+            <p>Liste consolidée — les compétences de niche sont fusionnées pour éviter la redondance. La Constitution ne donne aucune compétence.</p>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Compétences par caractéristique</caption>
+                    <thead>
+                        <tr><th>Caractéristique</th><th>Compétences</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Force</td><td>Athlétisme</td></tr>
+                        <tr><td>Dextérité</td><td>Acrobatie, Discrétion, Escamotage</td></tr>
+                        <tr><td>Intelligence</td><td>Science, Histoire, Investigation, Nature</td></tr>
+                        <tr><td>Sagesse</td><td>Dressage, Intuition, Médecine, Perception, Survie</td></tr>
+                        <tr><td>Charisme</td><td>Intimidation, Persuasion, Représentation, Tromperie</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="lignees">
+            <h2><span class="num">II.</span> Lignées (lignées humaines)</h2>
+            <p>Chaque personnage choisit une <span class="nom">lignée</span> (2 traits) et une <span class="nom">culture</span>. Aucun bonus de caractéristique n'est lié à la lignée.</p>
+            <div class="grille">
+                <div class="carte">
+                    <h3>Terrien de souche</h3>
+                    <p class="metier">Homo sapiens sapiens · Taille M · Vitesse 6 po</p>
+                    <ul class="puces">
+                        <li><span class="nom">Métabolisme standard robuste :</span> 1 utilisation de dé de vie supplémentaire par repos long (3 dés au lieu de 2 à chaque tranche).</li>
+                        <li><span class="nom">Boussole interne :</span> jamais perdu sans équipement : les tests de navigation sans carte se font avec un avantage.</li>
+                    </ul>
+                </div>
+                <div class="carte o2">
+                    <h3>Né-Martien</h3>
+                    <p class="metier">Homo sapiens ares · Taille M · Vitesse 8 po</p>
+                    <ul class="puces">
+                        <li><span class="nom">Légèreté :</span> vitesse 8 po ; escalade et saut sans test jusqu'à 2 po de haut ; port de charges réduit (3× FOR en kg) — mais en faible gravité (zones de la planète à gravité &lt; 1 g), cette limite disparaît.</li>
+                        <li><span class="nom">Poumons de cristal :</span> +3 minutes d'apnée avant les tests d'asphyxie ; les tests de CON contre l'air vicié se font avec un avantage.</li>
+                    </ul>
+                </div>
+                <div class="carte tech">
+                    <h3>Ceinturien</h3>
+                    <p class="metier">Homo sapiens cingulum · Taille P · Vitesse 6 po</p>
+                    <ul class="puces">
+                        <li><span class="nom">Taille P :</span> passage dans les gaines (action de déplacement) ; +1 en Discrétion et Escamotage.</li>
+                        <li><span class="nom">Main d'œuvre :</span> les outils improvisés fonctionnent dans ses mains comme des outils standard (pas de désavantage pour réparer sans outillage).</li>
+                    </ul>
+                </div>
+                <div class="carte danger">
+                    <h3>Né-Vénusien</h3>
+                    <p class="metier">Homo sapiens veneris · Taille M · Vitesse 6 po</p>
+                    <ul class="puces">
+                        <li><span class="nom">Force de gravité :</span> FOR plafond +2 (max 20) ; les jets de FOR contre être déplacé ou projeté ont un avantage ; port de charges ×2.</li>
+                        <li><span class="nom">Peau de plomb :</span> résistance aux premières blessures : le premier dégât contondant de chaque combat est réduit de moitié.</li>
+                    </ul>
+                </div>
+                <div class="carte tech">
+                    <h3>Génération-Modifié</h3>
+                    <p class="metier">Homo sapiens recurrens · Taille M · Vitesse 6 po</p>
+                    <ul class="puces">
+                        <li><span class="nom">Génome verrouillé :</span> avantage sur tous les jets de sauvegarde contre les maladies et les parasites ; aucune séquelle génétique.</li>
+                        <li><span class="nom">Mémoire de lignage :</span> une compétence supplémentaire au choix, et 1 PR bonus personnel utilisable sur n'importe quelle recherche à laquelle il participe (une fois par niveau technologique).</li>
+                    </ul>
+                </div>
+                <div class="carte tech">
+                    <h3>Cybernétique</h3>
+                    <p class="metier">Homo sapiens augmentatus · Taille M · Vitesse 6 po</p>
+                    <ul class="puces">
+                        <li><span class="nom">Châssis renforcé :</span> PV max +1 par niveau ; les jets de mort se font avec un avantage.</li>
+                        <li><span class="nom">Interface directe :</span> les drones et machines compatibles se pilotent à distance en action bonus (sans contact physique) ; piratage informatique : Investigation avec avantage sur les systèmes non-militaires.</li>
+                        <li><span class="nom">Dépendance (contrepartie légère) :</span> en cas de panne d'implant (Fiabilité 12), il subit 1 niveau d'épuisement jusqu'à la réparation ; une heure d'atelier ou de diagnostics suffit à le remettre en état.</li>
+                    </ul>
+                </div>
+                <div class="carte bio">
+                    <h3>Adaptatif-xéno</h3>
+                    <p class="metier">Homo sapiens adaptatus · Taille M · Vitesse 6 po · Rare, niveau technologique 3+</p>
+                    <ul class="puces">
+                        <li><span class="nom">Métabolisme universel :</span> peut tirer une nutrition partielle (½ ration) de toute matière organique extraterrestre non toxique ; les intoxications alimentaires sont réduites d'un cran.</li>
+                        <li><span class="nom">Immunité partielle :</span> les toxines biologiques extraterrestres infligent des dés de dégâts réduits d'un cran (2D6 → 1D6) ; mais −1 sur les jets sociaux avec les lignées non-modifiées (première impression).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultures">
+            <h2><span class="num">III.</span> Cultures (en choisir une)</h2>
+            <p>La culture accorde le <span class="nom">+2/+1</span> ou <span class="nom">+1/+1/+1</span> à répartir <span class="nom">uniquement parmi ses trois caractéristiques</span>, et un trait :</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Les huit cultures</caption>
+                    <thead>
+                        <tr><th>Culture</th><th>Caractéristiques</th><th>Trait</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Culture de vaisseau</td><td>DEX, CON, SAG</td><td>Consomme 1 jp d'O₂ de moins tous les 2 jours (arrondi à son avantage)</td></tr>
+                        <tr><td>Culture de chantier</td><td>FOR, CON, INT</td><td>Chaque tranche de 8 h de chantier à laquelle vous participez compte comme 10 h</td></tr>
+                        <tr><td>Culture militaire</td><td>FOR, DEX, CON</td><td>+1 initiative ; les armes à feu de l'équipement de départ comptent +10 munitions</td></tr>
+                        <tr><td>Culture agricole</td><td>SAG, INT, CON</td><td>Chaque serre que vous cultivez nourrit 1 personne de plus par jour</td></tr>
+                        <tr><td>Culture médicale</td><td>SAG, INT, DEX</td><td>Vos premiers secours stabilisent sur 9+ au lieu de 10+</td></tr>
+                        <tr><td>Culture scientifique</td><td>INT, SAG, CON</td><td>+1 PR la première fois que vous participez à chaque recherche</td></tr>
+                        <tr><td>Culture de la rue orbitale</td><td>DEX, CHA, INT</td><td>Avantage en Intuition contre les mensonges et les armes cachées</td></tr>
+                        <tr><td>Culture de survie</td><td>CON, SAG, FOR</td><td>Ignorez le premier niveau d'épuisement de chaque journée</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="classes">
+            <h2><span class="num">IV.</span> Les sept classes</h2>
+            <p>Chacune est présentée avec son rôle dans la colonie, sa maîtrise des jets de sauvegarde, ses maîtrises, son équipement de départ, une table de progression (niveaux 1–20) et ses capacités détaillées. Au niveau 3, chaque classe choisit une <span class="nom">spécialité</span> qui accorde des capacités aux niveaux 3, 10 et 17.</p>
+
+            <h3>Le Technicien</h3>
+            <div class="fiche-tech">
+                <div class="ligne"><span class="cle">Rôle</span><span class="val">Réparation, fabrication, improvisation, chantiers</span></div>
+                <div class="ligne"><span class="cle">Dé de vie</span><span class="val">D8</span></div>
+                <div class="ligne"><span class="cle">Jets de sauvegarde</span><span class="val">INT, CON</span></div>
+                <div class="ligne"><span class="cle">Maîtrises</span><span class="val">Tous les outils d'ingénierie et d'électronique, pistolets, armes de mêlée simples</span></div>
+                <div class="ligne"><span class="cle">Compétences (2)</span><span class="val">Science, Investigation, Histoire ou Nature</span></div>
+                <div class="ligne"><span class="cle">Équipement de départ</span><span class="val">Boîte à outils (avantage sur réparation), pistolet de service (1D8, 12 munitions), combi de travail (CA 11), 2 pièces détachées, lampe frontale</span></div>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table de progression — Technicien</caption>
+                    <thead>
+                        <tr><th>Niv.</th><th>Capacités</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Bricoleur, Diagnostic instantané</td></tr>
+                        <tr><td>2</td><td>Mains d'or</td></tr>
+                        <tr><td>3</td><td>Spécialité</td></tr>
+                        <tr><td>4</td><td>Amélioration de caractéristique</td></tr>
+                        <tr><td>5</td><td>Langue de la machine</td></tr>
+                        <tr><td>6</td><td>Rénovation (2/jour)</td></tr>
+                        <tr><td>7</td><td>—</td></tr>
+                        <tr><td>8</td><td>Ingénieur en chef</td></tr>
+                        <tr><td>9</td><td>Amélioration</td></tr>
+                        <tr><td>10</td><td>Chef de chantier, Spécialité (avancée)</td></tr>
+                        <tr><td>11</td><td>Guérison des machines</td></tr>
+                        <tr><td>12</td><td>Amélioration</td></tr>
+                        <tr><td>13</td><td>Usine portable</td></tr>
+                        <tr><td>14</td><td>—</td></tr>
+                        <tr><td>15</td><td>Amélioration</td></tr>
+                        <tr><td>16</td><td>Science inverse totale</td></tr>
+                        <tr><td>17</td><td>Forgeron de la colonie, Spécialité (capstone)</td></tr>
+                        <tr><td>18</td><td>Amélioration</td></tr>
+                        <tr><td>19</td><td>Perfection instantanée</td></tr>
+                        <tr><td>20</td><td>Chef-d'œuvre</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Bricoleur (niv. 1) :</span> 2×/jour, en 10 minutes, fabrique un objet improvisé (arme 1D6, grappin, jambe de fortune, filtre de fortune produisant 1 jp d'O₂) qui fonctionne 72 h ; il peut porter 2 improvisations actives simultanément.</li>
+                <li><span class="nom">Diagnostic instantané (niv. 1) :</span> identifie l'état, les PdD et la pièce fautive d'une machine sans test ; il connaît aussi le DD exact de la réparation.</li>
+                <li><span class="nom">Mains d'or (niv. 2) :</span> réparation avec avantage ; chaque réparation réussie rend 5 PdD supplémentaires.</li>
+                <li><span class="nom">Langue de la machine (niv. 5) :</span> prédit une panne 24 h à l'avance (le MJ révèle la prochaine machine qui tombera en panne) ; la réparation de cette machine coûte la moitié des pièces et se fait avec un avantage.</li>
+                <li><span class="nom">Rénovation (niv. 6) :</span> 2/jour, restaure 1 machine Hors service à l'état Endommagé sans pièce spécifique (cannibalisation instantanée).</li>
+                <li><span class="nom">Ingénieur en chef (niv. 8) :</span> tous les chantiers de la base avancent d'un ouvrier supplémentaire virtuel quand il supervise ; ses recettes d'atelier coûtent 1 unité de moins par catégorie de ressource (minimum 1).</li>
+                <li><span class="nom">Chef de chantier (niv. 10) :</span> une fois par semaine, conduit un chantier « marathon » : un bâtiment entier se construit en une journée (coût normal).</li>
+                <li><span class="nom">Guérison des machines (niv. 11) :</span> 1/jour, remet une machine de l'état Critique directement à Fonctionnelle en 1 heure de travail.</li>
+                <li><span class="nom">Usine portable (niv. 13) :</span> fabrique en extérieur, sans atelier, toute recette de DD ≤ 15 en temps normal (DD ≤ 18 en deux fois le temps).</li>
+                <li><span class="nom">Science inverse totale (niv. 16) :</span> apprend la recette d'un objet en 1 h au lieu de 8 ; sur réussite critique, reproduit l'objet sans détruire l'original.</li>
+                <li><span class="nom">Forgeron de la colonie (niv. 17) :</span> toutes ses fabrications voient leur DD réduit de 2 ; les recettes de niveau technologique 5–6 voient leur DD réduit de 4.</li>
+                <li><span class="nom">Perfection instantanée (niv. 19) :</span> réussite critique sur 19–20 pour toute réparation ou fabrication ; une réussite critique produit un exemplaire de qualité supérieure (autonomie doublée, +5 PdD).</li>
+                <li><span class="nom">Chef-d'œuvre (niv. 20) :</span> une fois par mois de jeu, fabrique un artefact unique de la colonie (véhicule légendaire, réacteur amélioré, fabrique automatisée) : le MJ et le joueur définissent ensemble ses propriétés selon le niveau technologique atteint.</li>
+            </ul>
+            <div class="panier energie">
+                <h3>Spécialité A — Le Démonteur (cannibalisation de machines)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> dépece toute machine en 10 min et récupère la moitié des ressources + 1 unité.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Réparation de fortune » — remet en marche n'importe quel véhicule Hors service pendant 1 heure ; « Recyclage parfait » — toutes les ressources des machines détruites sont récupérées.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Boucherie d'acier » — dépece une machine en 1 minute, même en combat (action) ; « Rien ne se perd » — la colonie ne subit plus jamais de perte de ressources lors d'une destruction de bâtiment ou de véhicule.</li>
+                </ul>
+            </div>
+            <div class="panier energie">
+                <h3>Spécialité B — L'Armurier (fabrication d'armes et de munitions)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> fabrique munitions et armes avec DD −2.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Prototype » — crée une arme unique avec une propriété spéciale (MJ) par mois ; « Série limitée » — chaque prototype peut être produit en 3 exemplaires.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Arsenal » — ses armes infligent +1 dé de dégâts ; « Légende de l'atelier » — fabrique des armes de niveau technologique 6 sans plan, en une semaine.</li>
+                </ul>
+            </div>
+            <div class="panier energie">
+                <h3>Spécialité C — L'Électronicien (drones et circuits)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> fabrique et répare les drones avec avantage.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Surchauffe ciblée » — un drone sous son contrôle inflige +1D6 dégâts ; « Essaim » — contrôle jusqu'à 3 drones simultanément sans action.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Réseau tactique » — ses drones partagent leurs perceptions avec toute la colonie (alerte automatique) ; « Machine exquise » — fabrique une IA de laboratoire qui produit 1 PR/jour toute seule et pilote 6 drones.</li>
+                </ul>
+            </div>
+
+            <h3>Le Médecin</h3>
+            <div class="fiche-tech">
+                <div class="ligne"><span class="cle">Rôle</span><span class="val">Soins, maladies, chirurgie, stabilisation</span></div>
+                <div class="ligne"><span class="cle">Dé de vie</span><span class="val">D8</span></div>
+                <div class="ligne"><span class="cle">Jets de sauvegarde</span><span class="val">SAG, CON</span></div>
+                <div class="ligne"><span class="cle">Maîtrises</span><span class="val">Kits médicaux, drogues et médicaments</span></div>
+                <div class="ligne"><span class="cle">Compétences (2)</span><span class="val">Médecine, Science, Intuition ou Survie</span></div>
+                <div class="ligne"><span class="cle">Équipement de départ</span><span class="val">Kit médical complet (avantage sur stabilisation), pistolet (10 munitions), 3 doses MED, journal médical, combi légère (CA 10)</span></div>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table de progression — Médecin</caption>
+                    <thead>
+                        <tr><th>Niv.</th><th>Capacités</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Premiers secours, Prévention</td></tr>
+                        <tr><td>2</td><td>Triage</td></tr>
+                        <tr><td>3</td><td>Spécialité</td></tr>
+                        <tr><td>4</td><td>Amélioration de caractéristique</td></tr>
+                        <tr><td>5</td><td>Diagnostic sûr</td></tr>
+                        <tr><td>6</td><td>Chirurgie de campagne (2/jour)</td></tr>
+                        <tr><td>7</td><td>—</td></tr>
+                        <tr><td>8</td><td>Immunité de terrain</td></tr>
+                        <tr><td>9</td><td>Amélioration</td></tr>
+                        <tr><td>10</td><td>Miracle clinique, Spécialité (avancée)</td></tr>
+                        <tr><td>11</td><td>Régénération de terrain</td></tr>
+                        <tr><td>12</td><td>Amélioration</td></tr>
+                        <tr><td>13</td><td>Anesthésie de guerre</td></tr>
+                        <tr><td>14</td><td>—</td></tr>
+                        <tr><td>15</td><td>Amélioration</td></tr>
+                        <tr><td>16</td><td>Pharmacopée vivante</td></tr>
+                        <tr><td>17</td><td>Immunologie collective, Spécialité (capstone)</td></tr>
+                        <tr><td>18</td><td>Amélioration</td></tr>
+                        <tr><td>19</td><td>Main divine de la science</td></tr>
+                        <tr><td>20</td><td>Au-delà de la mort</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Premiers secours (niv. 1) :</span> 3×/jour, stabilise un mourant sans test et rend 1D4 PV.</li>
+                <li><span class="nom">Prévention (niv. 1) :</span> 3×/jour, accorde l'avantage sur un jet de sauvegarde contre maladie, infection ou intoxication à un personnage qu'il a soigné dans les dernières 24 h ; ces personnages ne subissent jamais les complications d'infection sous sa surveillance.</li>
+                <li><span class="nom">Triage (niv. 2) :</span> en action bonus, désigne un allié : ses jets de mort et de sauvegarde de CON bénéficient d'un +2 pendant 1 minute ; tant que le Médecin est visible de l'allié, l'allié inconscient ne perd pas de PV supplémentaires sur un échec de jet de mort.</li>
+                <li><span class="nom">Diagnostic sûr (niv. 5) :</span> identifie une maladie, un parasite ou une toxine en 1 minute d'examen (jet seulement pour les maladies extraterrestres inconnues).</li>
+                <li><span class="nom">Chirurgie de campagne (niv. 6) :</span> 2/jour, chirurgie hors infirmerie sans désavantage.</li>
+                <li><span class="nom">Immunité de terrain (niv. 8) :</span> résistance aux maladies et aux toxines ; ne peut plus contracter les maladies extraterrestres banales.</li>
+                <li><span class="nom">Miracle clinique (niv. 10) :</span> 1×/semaine, ramène un personnage mort depuis moins de 1 minute (cœur relancé) à 0 PV stable.</li>
+                <li><span class="nom">Régénération de terrain (niv. 11) :</span> ses soins de premiers secours rendent 2D4+2 PV ; ses patients en repos long sous sa surveillance récupèrent tous leurs dés de vie.</li>
+                <li><span class="nom">Anesthésie de guerre (niv. 13) :</span> en action bonus, rend un allié inconscient mais stable instantanément (immunisé aux dégâts pendant son transport) — utile pour extraire un blessé sous le feu.</li>
+                <li><span class="nom">Pharmacopée vivante (niv. 16) :</span> chaque jour, fabrique 2 doses de médicaments sans consommer de ressources ; ses doses comptent double pour les séquelles.</li>
+                <li><span class="nom">Immunologie collective (niv. 17) :</span> une fois par maladie identifiée, vaccine toute la colonie : plus personne ne peut l'attraper.</li>
+                <li><span class="nom">Main divine de la science (niv. 19) :</span> ses chirurgies réussissent automatiquement sur les blessures de moins de 24 h ; il restaure les PV maximum perdus par radiation ou maladie.</li>
+                <li><span class="nom">Au-delà de la mort (niv. 20) :</span> son Miracle clinique devient utilisable 1×/jour, sur un mort de moins de 5 minutes, et rend 1D4 PV au lieu de 0. La colonie garde son unique miracle — désormais quotidien.</li>
+            </ul>
+            <div class="panier bio">
+                <h3>Spécialité A — Le Chirurgien (chirurgie et lésions profondes)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> chirurgie avec DD −2.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Retrait » — extrait un parasite ou une balle sans test ; « Reconstruction » — annule une séquelle permanente.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Greffe » — remplace un membre perdu par une prothèse fonctionnelle (FOR ou DEX +1) ; « Sculpteur de chair » — restaure n'importe quel patient, même défiguré ou paralysé, en 1 semaine de soins intensifs.</li>
+                </ul>
+            </div>
+            <div class="panier bio">
+                <h3>Spécialité B — Le Toxicologue (toxines et antidotes)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> 1×/jour, fabrique 1 dose de toxine ou d'antidote en 1 h.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Analyse » — antidote sur mesure en 24 h contre toute maladie identifiée ; « Arme biologique » — ses toxines ignorent la résistance au poison.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Vecteur parfait » — ses toxines sont aérosols : zone de 2 po, DD 15 CON ; « Panacée » — synthétise en une semaine un remède universel contre toutes les maladies extraterrestres connues de la colonie.</li>
+                </ul>
+            </div>
+            <div class="panier bio">
+                <h3>Spécialité C — Le Médecin de colonie (santé collective)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> l'infirmerie soigne 2 patients supplémentaires par jour.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Santé publique » — Moral de colonie +1 permanent tant qu'il est en poste ; les temps de guérison de toutes les séquelles de la colonie sont réduits de moitié.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Hôpital » — peut diriger une infirmerie v3 : soigne automatiquement 10 patients/jour ; « Nation en santé » — tant qu'il vit, la colonie ignore les malus de Moral liés aux blessures et maladies.</li>
+                </ul>
+            </div>
+
+            <h3>L'Explorateur</h3>
+            <div class="fiche-tech">
+                <div class="ligne"><span class="cle">Rôle</span><span class="val">Éclaireur, pistage, survie en extérieur, navigation</span></div>
+                <div class="ligne"><span class="cle">Dé de vie</span><span class="val">D10</span></div>
+                <div class="ligne"><span class="cle">Jets de sauvegarde</span><span class="val">SAG, DEX</span></div>
+                <div class="ligne"><span class="cle">Maîtrises</span><span class="val">Armes à feu légères, armes de mêlée simples, combinaisons</span></div>
+                <div class="ligne"><span class="cle">Compétences (2)</span><span class="val">Survie, Perception, Athlétisme ou Discrétion</span></div>
+                <div class="ligne"><span class="cle">Équipement de départ</span><span class="val">Fusil de chasse (2D6, 6 mun.), combi étanche (4 h O₂), carte de fortune, 3 rations, jumelles</span></div>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table de progression — Explorateur</caption>
+                    <thead>
+                        <tr><th>Niv.</th><th>Capacités</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Nomade, Sixième sens</td></tr>
+                        <tr><td>2</td><td>Pas du pisteur</td></tr>
+                        <tr><td>3</td><td>Spécialité</td></tr>
+                        <tr><td>4</td><td>Amélioration de caractéristique</td></tr>
+                        <tr><td>5</td><td>Attaque supplémentaire</td></tr>
+                        <tr><td>6</td><td>Métabolisme de fer (2/jour)</td></tr>
+                        <tr><td>7</td><td>—</td></tr>
+                        <tr><td>8</td><td>Horizon familier</td></tr>
+                        <tr><td>9</td><td>Amélioration</td></tr>
+                        <tr><td>10</td><td>Légende de surface, Spécialité (avancée)</td></tr>
+                        <tr><td>11</td><td>Survivant absolu</td></tr>
+                        <tr><td>12</td><td>Amélioration</td></tr>
+                        <tr><td>13</td><td>Marche forcée</td></tr>
+                        <tr><td>14</td><td>—</td></tr>
+                        <tr><td>15</td><td>Amélioration</td></tr>
+                        <tr><td>16</td><td>Poumon de fer</td></tr>
+                        <tr><td>17</td><td>Esprit de la planète, Spécialité (capstone)</td></tr>
+                        <tr><td>18</td><td>Amélioration</td></tr>
+                        <tr><td>19</td><td>Marche légendaire</td></tr>
+                        <tr><td>20</td><td>Enfant du désert</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Nomade (niv. 1) :</span> consomme 1 jour-personne d'O₂ de moins tous les 4 jours ; ignore les malus de fatigue de combinaison ; les tests de CON liés à l'environnement (froid, chaleur, air vicié) se font avec un avantage.</li>
+                <li><span class="nom">Sixième sens (niv. 1) :</span> le MJ répond honnêtement à une question de danger par jour de voyage ; de plus, son groupe a l'avantage à l'initiative en extérieur et peut éviter une rencontre de son choix par voyage (détection précoce).</li>
+                <li><span class="nom">Pas du pisteur (niv. 2) :</span> voyage sans test de navigation tant qu'il mène le groupe ; ses groupes ne perdent jamais de temps à cause d'un échec de Survie.</li>
+                <li><span class="nom">Attaque supplémentaire (niv. 5) :</span> deux attaques par action d'attaque.</li>
+                <li><span class="nom">Métabolisme de fer (niv. 6) :</span> 2/jour, ignore un niveau d'épuisement ou une journée de faim/soif.</li>
+                <li><span class="nom">Horizon familier (niv. 8) :</span> les hexagones qu'il a déjà traversés sont toujours connus : il y détecte automatiquement tout changement (nouvelle faction, faune migrée, épave apparue).</li>
+                <li><span class="nom">Légende de surface (niv. 10) :</span> 1×/jour, en réaction, annule un dégât de zone ou une chute qui le toucherait. Il revient toujours.</li>
+                <li><span class="nom">Survivant absolu (niv. 11) :</span> ignore les 2 premiers niveaux d'épuisement de chaque journée ; dort d'un sommeil parfait n'importe où (repos long en nature = conditions de base).</li>
+                <li><span class="nom">Marche forcée (niv. 13) :</span> 1×/voyage, le groupe peut doubler sa distance d'un jour (sans malus d'épuisement).</li>
+                <li><span class="nom">Poumon de fer (niv. 16) :</span> sa consommation d'O₂ est divisée par deux ; tient deux fois plus longtemps sans air avant les tests de CON.</li>
+                <li><span class="nom">Esprit de la planète (niv. 17) :</span> trois questions de danger par jour de voyage ; son groupe ne peut plus être surpris en extérieur.</li>
+                <li><span class="nom">Marche légendaire (niv. 19) :</span> le groupe qu'il mène gagne +20 km/jour et ne subit jamais les malus de terrain extrême.</li>
+                <li><span class="nom">Enfant du désert (niv. 20) :</span> ignore totalement la météo et le climat ; 1×/voyage, en réaction, annule un événement planétaire mortel pour tout son groupe (le MJ doit proposer une alternative dramatique, pas une mort).</li>
+            </ul>
+            <div class="panier eau">
+                <h3>Spécialité A — Le Traqueur (chasse et pistage)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> avantage sur le pistage ; ne rate jamais une piste de moins de 48 h.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Embuscade » — surprise automatique sur une créature pistée ; « Connaissance du prédateur » — connaît les PV, la CA et la faiblesse de toute créature déjà rencontrée.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Chasseur d'élite » — ses dégâts contre la faune augmentent d'un dé ; « Apporteur » — chaque chasse qu'il mène nourrit la colonie pendant une semaine (production ×5 sur le butin).</li>
+                </ul>
+            </div>
+            <div class="panier eau">
+                <h3>Spécialité B — Le Guetteur (vigilance et cartographie)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> le groupe ne peut pas être surpris pendant un voyage qu'il mène.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Cartographe » — chaque hex qu'il traverse révèle aussi les hex adjacents ; « Longue-vue » — repère un événement à 30 km de la base (le MJ doit le lui signaler).</li>
+                    <li><span class="nom">Niv. 17 :</span> « Sentinelle » — la base ne peut plus être surprise par une intrusion tant qu'il n'est pas absent plus de 24 h ; « Œil de la planète » — connaît en permanence la position de chaque faction et de chaque épave de la carte.</li>
+                </ul>
+            </div>
+            <div class="panier eau">
+                <h3>Spécialité C — Le Nomade des sables (survie dans les extrêmes)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> résistance au froid et à la chaleur extrêmes.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Puits vivant » — trouve de l'eau comestible avec un test DD 10 dans tout biome qui en contient ; « Inadapté » — ignore une ligne de la table météo de son choix chaque jour.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Trouvaille » — 1×/jour, repère automatiquement la ressource cachée d'un hex ; « Survivant éternel » — survit seul et sans équipement dans n'importe quel biome indéfiniment, et emmène un compagnon dans ces conditions.</li>
+                </ul>
+            </div>
+
+            <h3>Le Soldat</h3>
+            <div class="fiche-tech">
+                <div class="ligne"><span class="cle">Rôle</span><span class="val">Combat, défense de la base, armes à feu</span></div>
+                <div class="ligne"><span class="cle">Dé de vie</span><span class="val">D10</span></div>
+                <div class="ligne"><span class="cle">Jets de sauvegarde</span><span class="val">CON, FOR</span></div>
+                <div class="ligne"><span class="cle">Maîtrises</span><span class="val">Toutes les armes à feu, armures, explosifs</span></div>
+                <div class="ligne"><span class="cle">Compétences (2)</span><span class="val">Athlétisme, Intimidation, Perception ou Acrobatie</span></div>
+                <div class="ligne"><span class="cle">Équipement de départ</span><span class="val">Fusil d'assaut (1D10, 30 mun.), gilet de plaque (CA 13), 2 chargeurs de réserve, casque, baïonnette (1D6)</span></div>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table de progression — Soldat</caption>
+                    <thead>
+                        <tr><th>Niv.</th><th>Capacités</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Endurance au combat, Tir de suppression</td></tr>
+                        <tr><td>2</td><td>Recyclage de couvert</td></tr>
+                        <tr><td>3</td><td>Spécialité</td></tr>
+                        <tr><td>4</td><td>Amélioration de caractéristique</td></tr>
+                        <tr><td>5</td><td>Attaque supplémentaire</td></tr>
+                        <tr><td>6</td><td>Tenace (2/jour)</td></tr>
+                        <tr><td>7</td><td>—</td></tr>
+                        <tr><td>8</td><td>Ligne de défense</td></tr>
+                        <tr><td>9</td><td>Amélioration</td></tr>
+                        <tr><td>10</td><td>Vétéran de la poussière, Spécialité (avancée)</td></tr>
+                        <tr><td>11</td><td>Arène de fer</td></tr>
+                        <tr><td>12</td><td>Amélioration</td></tr>
+                        <tr><td>13</td><td>Discipline de tir</td></tr>
+                        <tr><td>14</td><td>—</td></tr>
+                        <tr><td>15</td><td>Amélioration</td></tr>
+                        <tr><td>16</td><td>Blindage de vétéran</td></tr>
+                        <tr><td>17</td><td>Muraille, Spécialité (capstone)</td></tr>
+                        <tr><td>18</td><td>Amélioration</td></tr>
+                        <tr><td>19</td><td>Maître de guerre</td></tr>
+                        <tr><td>20</td><td>Légende de guerre</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Endurance au combat (niv. 1) :</span> 1×/combat, relance une attaque manquée ou ajoute un dé de dégâts sur une touche.</li>
+                <li><span class="nom">Tir de suppression (niv. 1) :</span> en action bonus, impose un désavantage aux attaques d'une créature à portée jusqu'à son prochain tour (1×/round).</li>
+                <li><span class="nom">Recyclage de couvert (niv. 2) :</span> en réaction, déplace 1 po quand il est touché par une arme à distance : −5 dégâts subis par tranche de couvert (léger −5, lourd −10).</li>
+                <li><span class="nom">Attaque supplémentaire (niv. 5) :</span> deux attaques par action.</li>
+                <li><span class="nom">Tenace (niv. 6) :</span> 2/jour, réduit à 0 PV ? Il reste debout avec 1 PV.</li>
+                <li><span class="nom">Ligne de défense (niv. 8) :</span> les alliés à 2 po derrière lui gagnent un couvert léger contre les attaques à distance.</li>
+                <li><span class="nom">Vétéran de la poussière (niv. 10) :</span> 1×/combat, une créature ennemie qui le rate subit sa riposte automatique (attaque gratuite). Les munitions comptent.</li>
+                <li><span class="nom">Arène de fer (niv. 11) :</span> sa riposte et ses attaques d'opportunité infligent +1D6 dégâts ; il gagne une réaction supplémentaire par round.</li>
+                <li><span class="nom">Discipline de tir (niv. 13) :</span> ses tirs de burst ne coûtent qu'1 munition supplémentaire au lieu de 2 ; il recharge en action bonus.</li>
+                <li><span class="nom">Blindage de vétéran (niv. 16) :</span> son armure personnelle gagne +2 CA permanent (améliorations intégrées de son cru) ; il ignore les malus de combi.</li>
+                <li><span class="nom">Muraille (niv. 17) :</span> sa Ligne de défense devient un couvert lourd ; il gagne la résistance aux dégâts contondants et tranchants.</li>
+                <li><span class="nom">Maître de guerre (niv. 19) :</span> trois attaques par action ; ses alliés à 2 po gagnent +1 aux jets d'attaque quand il est en première ligne.</li>
+                <li><span class="nom">Légende de guerre (niv. 20) :</span> Tenace devient illimité ; il ne peut pas être réduit à 0 PV par un ennemi de Menace inférieure ou égale à son niveau/2. Il est le mur final de la colonie.</li>
+            </ul>
+            <div class="panier alerte">
+                <h3>Spécialité A — Le Franc-tireur (tir de précision)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> position immobile = avantage au tir de précision.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Un coup, une vie » — critique sur 19–20 au fusil de précision ; « Transperce » — les cibles derrière un couvert léger ne bénéficient plus du bonus.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Longue portée » — ses portées doublent ; il ignore le désavantage à portée max ; « Faucheuse » — une fois par combat, un coup critique est une exécution instantanée sur une cible de moins de 100 PV.</li>
+                </ul>
+            </div>
+            <div class="panier alerte">
+                <h3>Spécialité B — Le Casque bleu de fortune (protection des alliés)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> en action bonus, interception d'une attaque dirigée vers un allié à 1 po.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Bouclier humain » — prend la moitié des dégâts d'un allié adjacent ; « Personne ne reste derrière » — porte un allié inconscient sans malus de vitesse, en tirant toujours.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Réflexe héroïque » — 2 interceptions par round ; « Mur de chair » — 1×/jour, prend la totalité des dégâts d'une attaque destinée à un allié, avec résistance aux dégâts.</li>
+                </ul>
+            </div>
+            <div class="panier alerte">
+                <h3>Spécialité C — Le Démineur-assauteur (destruction et brèches)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> dégâts doublés contre les structures, portes et machines.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Grenade réfléchie » — lance une grenade en rebond : ignore le couvert ; « Breacher » — ouvre n'importe quel sas ou porte en 1 minute.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Charge explosive » — ses explosifs créent une brèche de 2 po et étourdissent (DD 15 CON) tous les occupants ; « Artilleur » — fabrique et opère un canon de siège colonial (3D10, portée 200 po, recharge 1 action d'équipe).</li>
+                </ul>
+            </div>
+
+            <h3>Le Scientifique</h3>
+            <div class="fiche-tech">
+                <div class="ligne"><span class="cle">Rôle</span><span class="val">Recherche, analyse, technologie</span></div>
+                <div class="ligne"><span class="cle">Dé de vie</span><span class="val">D6</span></div>
+                <div class="ligne"><span class="cle">Jets de sauvegarde</span><span class="val">INT, SAG</span></div>
+                <div class="ligne"><span class="cle">Maîtrises</span><span class="val">Instruments d'analyse, laboratoire</span></div>
+                <div class="ligne"><span class="cle">Compétences (2)</span><span class="val">Science, Investigation, Histoire ou Nature</span></div>
+                <div class="ligne"><span class="cle">Équipement de départ</span><span class="val">Scanner portable (analyse en 10 min), pistolet (10 mun.), 3 échantillons stériles, carnet de terrain, combi légère</span></div>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table de progression — Scientifique</caption>
+                    <thead>
+                        <tr><th>Niv.</th><th>Capacités</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Esprit analytique, Théorisation</td></tr>
+                        <tr><td>2</td><td>Protocole</td></tr>
+                        <tr><td>3</td><td>Spécialité</td></tr>
+                        <tr><td>4</td><td>Amélioration de caractéristique</td></tr>
+                        <tr><td>5</td><td>Publication</td></tr>
+                        <tr><td>6</td><td>Percée (2 PR/jour)</td></tr>
+                        <tr><td>7</td><td>—</td></tr>
+                        <tr><td>8</td><td>Paradigme</td></tr>
+                        <tr><td>9</td><td>Amélioration</td></tr>
+                        <tr><td>10</td><td>Génie de la colonie, Spécialité (avancée)</td></tr>
+                        <tr><td>11</td><td>Théorie unifiée</td></tr>
+                        <tr><td>12</td><td>Amélioration</td></tr>
+                        <tr><td>13</td><td>Cerveau collectif</td></tr>
+                        <tr><td>14</td><td>—</td></tr>
+                        <tr><td>15</td><td>Amélioration</td></tr>
+                        <tr><td>16</td><td>Horizon scientifique</td></tr>
+                        <tr><td>17</td><td>Découverte majeure, Spécialité (capstone)</td></tr>
+                        <tr><td>18</td><td>Amélioration</td></tr>
+                        <tr><td>19</td><td>Esprit génial</td></tr>
+                        <tr><td>20</td><td>Newton de la colonie</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Esprit analytique (niv. 1) :</span> identifie un phénomène sur 19–20 ; réduit d'un tiers tout temps de recherche qu'il dirige.</li>
+                <li><span class="nom">Théorisation (niv. 1) :</span> 1×/session, déduit un indice gratuit d'un échec ; de plus, chaque recherche à laquelle il participe produit +1 PR au moment de sa conclusion.</li>
+                <li><span class="nom">Protocole (niv. 2) :</span> toute analyse (maladie, artefact, créature) qu'il mène obtient l'avantage.</li>
+                <li><span class="nom">Publication (niv. 5) :</span> ses découvertes valent 2 PR de plus au moment où elles sont consignées au labo.</li>
+                <li><span class="nom">Percée (niv. 6) :</span> il produit 2 PR/jour au laboratoire (3 avec le bon équipement).</li>
+                <li><span class="nom">Paradigme (niv. 8) :</span> choisit un domaine (biologie, énergie, géologie, extraterrestre) : dans ce domaine, ses jets sont à +4 et le MJ révèle les implications à long terme.</li>
+                <li><span class="nom">Génie de la colonie (niv. 10) :</span> 1×/mois, débloque instantanément une recette de n'importe quel niveau technologique atteint par la colonie.</li>
+                <li><span class="nom">Théorie unifiée (niv. 11) :</span> produit 3 PR/jour au laboratoire ; il peut diriger deux recherches en parallèle.</li>
+                <li><span class="nom">Cerveau collectif (niv. 13) :</span> les chercheurs PNJ sous sa direction produisent 2 PR chacun (au lieu de 1).</li>
+                <li><span class="nom">Horizon scientifique (niv. 16) :</span> ses analyses révèlent toujours un usage exploitable (recette, tactique ou contre-mesure), même sur un échec.</li>
+                <li><span class="nom">Découverte majeure (niv. 17) :</span> 1×/mois, débloque une recette d'un niveau technologique supérieur à celui de la colonie.</li>
+                <li><span class="nom">Esprit génial (niv. 19) :</span> avantage sur tous les jets de Science et d'Investigation ; une réussite critique lui accorde un indice de campagne (le MJ doit répondre à une question sur les secrets de la planète).</li>
+                <li><span class="nom">Newton de la colonie (niv. 20) :</span> 1×/campagne, accomplit une percée historique : réduit un temps de recherche à zéro, débloque le niveau technologique 6, ou résout scientifiquement le mystère central de la planète (avec le MJ).</li>
+            </ul>
+            <div class="panier eau">
+                <h3>Spécialité A — Le Xénobiologiste (étude de la faune)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> analyse une créature en 10 min : révèle PV, CA et faiblesse.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Commensal » — 1×/jour, une créature non-intelligente le considère comme non-menace pendant 1 heure ; « Domestication » — une créature docile peut être dressée et ajoutée à la colonie.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Élevage » — la colonie peut élever une espèce domestiquée pour la viande (production jr équivalente à une serre) ; « Apiarie xénobiologique » — symbiose entre la colonie et l'écosystème local : la faune cesse d'attaquer la base et chaque serre nourrit 2 personnes de plus par jour.</li>
+                </ul>
+            </div>
+            <div class="panier eau">
+                <h3>Spécialité B — Le Physicien (énergie et matière)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> repère toute source d'énergie à 10 km.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Rendement » — +4 ÉNE/jour sur la production totale de la base grâce à ses optimisations ; « Théorie du Tout » — les technologies extraterrestres qu'il étudie donnent le double de PR.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Supraconducteur » — la colonie ne subit plus de pertes de stockage d'énergie ; chaque batterie stocke 10 ÉNE de plus ; « Énergie infinie » — stabilise une source d'énergie extraterrestre : +20 ÉNE/jour et l'incident « nodule instable » devient impossible.</li>
+                </ul>
+            </div>
+            <div class="panier eau">
+                <h3>Spécialité C — L'Archéologue des étoiles (ruines et technologies anciennes)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> lit les inscriptions et interfaces extraterrestres basiques.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Mot de passe » — ouvre une porte scellée extraterrestre sur jet Science DD 15 ; « Le Secret » — le MJ doit répondre à une question fondamentale de la campagne (une seule fois, mais franchement).</li>
+                    <li><span class="nom">Niv. 17 :</span> « Traduction complète » — comprend toute technologie extraterrestre étudiée en 1 h ; les gardiens le reconnaissent comme un héritier (non-agression) ; « Héritier des ruines » — active une structure extraterrestre majeure (vaisseau, portail, cité) : il en devient l'opérateur légitime.</li>
+                </ul>
+            </div>
+
+            <h3>Le Pilote</h3>
+            <div class="fiche-tech">
+                <div class="ligne"><span class="cle">Rôle</span><span class="val">Véhicules, drones, transport d'expédition</span></div>
+                <div class="ligne"><span class="cle">Dé de vie</span><span class="val">D8</span></div>
+                <div class="ligne"><span class="cle">Jets de sauvegarde</span><span class="val">DEX, INT</span></div>
+                <div class="ligne"><span class="cle">Maîtrises</span><span class="val">Tous les véhicules terrestres et légers, drones</span></div>
+                <div class="ligne"><span class="cle">Compétences (2)</span><span class="val">Acrobatie, Science, Investigation ou Perception</span></div>
+                <div class="ligne"><span class="cle">Équipement de départ</span><span class="val">Casque HUD (+2 Perception en véhicule), pistolet (12 mun.), kit de réparation véhicule (5 usages), combi légère (2 h O₂)</span></div>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table de progression — Pilote</caption>
+                    <thead>
+                        <tr><th>Niv.</th><th>Capacités</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>As du manche, Repair en vol</td></tr>
+                        <tr><td>2</td><td>Convoyeur</td></tr>
+                        <tr><td>3</td><td>Spécialité</td></tr>
+                        <tr><td>4</td><td>Amélioration de caractéristique</td></tr>
+                        <tr><td>5</td><td>Manœuvre évasive</td></tr>
+                        <tr><td>6</td><td>Mécanicien de bord (2/jour)</td></tr>
+                        <tr><td>7</td><td>—</td></tr>
+                        <tr><td>8</td><td>Carte routière</td></tr>
+                        <tr><td>9</td><td>Amélioration</td></tr>
+                        <tr><td>10</td><td>Légende de la route, Spécialité (avancée)</td></tr>
+                        <tr><td>11</td><td>Route du tonnerre</td></tr>
+                        <tr><td>12</td><td>Amélioration</td></tr>
+                        <tr><td>13</td><td>Position parfaite</td></tr>
+                        <tr><td>14</td><td>—</td></tr>
+                        <tr><td>15</td><td>Amélioration</td></tr>
+                        <tr><td>16</td><td>Commandant de convoi</td></tr>
+                        <tr><td>17</td><td>Pilote prodige, Spécialité (capstone)</td></tr>
+                        <tr><td>18</td><td>Amélioration</td></tr>
+                        <tr><td>19</td><td>Maître mécanicien</td></tr>
+                        <tr><td>20</td><td>Légende du vide</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">As du manche (niv. 1) :</span> bonus de maîtrise doublé sur les jets de DEX en pilotage ; en véhicule, lui et ses passagers ignorent le malus de tir embarqué une fois par round.</li>
+                <li><span class="nom">Repair en vol (niv. 1) :</span> ignore jusqu'à 2 niveaux d'état de panne sur un véhicule qu'il conduit.</li>
+                <li><span class="nom">Convoyeur (niv. 2) :</span> +10 km/jour pour tout véhicule qu'il conduit ; le véhicule consomme 1 fût de carburant de moins par voyage.</li>
+                <li><span class="nom">Manœuvre évasive (niv. 5) :</span> en réaction, le véhicule qu'il conduit annule une attaque qui l'a touché (1×/round).</li>
+                <li><span class="nom">Mécanicien de bord (niv. 6) :</span> 2/jour, répare 1D6 PdD du véhicule en action bonus.</li>
+                <li><span class="nom">Carte routière (niv. 8) :</span> les routes qu'il a déjà empruntées voient leur carburant réduit de moitié et leurs rencontres dangereuses évitées sur 1–3 sur D6.</li>
+                <li><span class="nom">Légende de la route (niv. 10) :</span> son véhicule ignore une ligne de la table météo par voyage ; il peut traverser un hex « impossible » (tempête, crue) une fois par voyage.</li>
+                <li><span class="nom">Route du tonnerre (niv. 11) :</span> le groupe qu'il transporte gagne +20 km/jour de plus ; il ne rate jamais un test de navigation en véhicule.</li>
+                <li><span class="nom">Position parfaite (niv. 13) :</span> ses passagers tirent sans malus depuis son véhicule ; son véhicule gagne +2 CA et +2 jets de sauvegarde.</li>
+                <li><span class="nom">Commandant de convoi (niv. 16) :</span> tous les véhicules du convoi (jusqu'à 3) bénéficient de ses capacités de conduite (évasion, vitesse, carburant).</li>
+                <li><span class="nom">Pilote prodige (niv. 17) :</span> en réaction, son véhicule esquive toute attaque de zone ; il peut piloter en aveugle (tempête totale, nuit) sans malus.</li>
+                <li><span class="nom">Maître mécanicien (niv. 19) :</span> tous les véhicules qu'il entretient gagnent +20 PdD et la Fiabilité 18 ; ses réparations de bord deviennent gratuites (3×/jour).</li>
+                <li><span class="nom">Légende du vide (niv. 20) :</span> il peut piloter tout ce qui vole ou décolle — y compris la fusée-échantillon de la fin de campagne. Une fois par mois, il peut effectuer un vol orbital court : cartographie 20 hex, largue un message, ou récupère un satellite.</li>
+            </ul>
+            <div class="panier eau">
+                <h3>Spécialité A — Le Pilote de course (vitesse pure)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> +20 km/jour en terrain plat.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Poussée » — double la vitesse pour 1 heure (le moteur subit 1D6 PdD) ; « Trajet record » — une fois par semaine, un voyage est résolu en un jour, quelle que soit la distance inférieure à 100 km.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Ligne droite » — son véhicule ignore les terrains difficiles ; « Horizon battu » — une fois par semaine, un voyage de n'importe quelle distance sur la carte se résout en un jour (le MJ déroule les rencontres de route en narration).</li>
+                </ul>
+            </div>
+            <div class="panier eau">
+                <h3>Spécialité B — L'Opérateur de drones (présence à distance)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> ses drones ont +10 PV et une autonomie doublée.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Vue d'oiseau » — le groupe connaît toujours la position d'une menace repérée par drone ; « Essaim tactique » — jusqu'à 2 drones de combat opèrent en autonomie totale.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Main lointaine » — ses drones à 10 km de la base sont contrôlés depuis le centre de contrôle (aucune distance max) ; « Présence multiple » — opère 6 drones autonomes simultanément, dont un drone lourd de reconnaissance armé.</li>
+                </ul>
+            </div>
+            <div class="panier eau">
+                <h3>Spécialité C — Le Routier des glaces (transport lourd)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> les véhicules qu'il conduit transportent le double.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Convoi » — un second véhicule suit sans conducteur (piloté à distance, vitesse de base) ; « Rien ne s'arrête » — son convoi traverse les terrains difficiles sans malus.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Caravane » — 3 véhicules suiveurs ; le convoi peut évacuer toute une petite colonie ; « Exode » — une fois par campagne, organise l'évacuation totale de la colonie vers n'importe quel point de la carte en une semaine, sans perte.</li>
+                </ul>
+            </div>
+
+            <h3>Le Commandant</h3>
+            <div class="fiche-tech">
+                <div class="ligne"><span class="cle">Rôle</span><span class="val">Moral de colonie, gestion des PNJ, factions, négociation</span></div>
+                <div class="ligne"><span class="cle">Dé de vie</span><span class="val">D8</span></div>
+                <div class="ligne"><span class="cle">Jets de sauvegarde</span><span class="val">CHA, SAG</span></div>
+                <div class="ligne"><span class="cle">Maîtrises</span><span class="val">Pistolets, armes simples</span></div>
+                <div class="ligne"><span class="cle">Compétences (2)</span><span class="val">Persuasion, Intimidation, Tromperie ou Intuition</span></div>
+                <div class="ligne"><span class="cle">Équipement de départ</span><span class="val">Pistolet de service (12 mun.), insignes de mission (+1 aux jets avec PNJ de la mission), 20 crédits d'échange, radio portable</span></div>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table de progression — Commandant</caption>
+                    <thead>
+                        <tr><th>Niv.</th><th>Capacités</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Moral, Médiation</td></tr>
+                        <tr><td>2</td><td>Chef de poste</td></tr>
+                        <tr><td>3</td><td>Spécialité</td></tr>
+                        <tr><td>4</td><td>Amélioration de caractéristique</td></tr>
+                        <tr><td>5</td><td>Mot d'ordre</td></tr>
+                        <tr><td>6</td><td>Discours (2/jour)</td></tr>
+                        <tr><td>7</td><td>—</td></tr>
+                        <tr><td>8</td><td>Réputation vivante</td></tr>
+                        <tr><td>9</td><td>Amélioration</td></tr>
+                        <tr><td>10</td><td>Père de la colonie, Spécialité (avancée)</td></tr>
+                        <tr><td>11</td><td>Voix de la raison</td></tr>
+                        <tr><td>12</td><td>Amélioration</td></tr>
+                        <tr><td>13</td><td>Institution</td></tr>
+                        <tr><td>14</td><td>—</td></tr>
+                        <tr><td>15</td><td>Amélioration</td></tr>
+                        <tr><td>16</td><td>Gouverneur</td></tr>
+                        <tr><td>17</td><td>Nation souterraine, Spécialité (capstone)</td></tr>
+                        <tr><td>18</td><td>Amélioration</td></tr>
+                        <tr><td>19</td><td>Charisme légendaire</td></tr>
+                        <tr><td>20</td><td>Fondateur</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Moral (niv. 1) :</span> les PNJ sous ses ordres gagnent +2 sur leurs jets de tâche de colonie ; une fois par jour de gestion, il peut faire rejouer un jet de tâche de PNJ raté.</li>
+                <li><span class="nom">Médiation (niv. 1) :</span> 1×/rencontre, transforme une hostilité humaine en discussion (la faction accepte de parler 10 minutes, pas plus) ; pendant la discussion, aucune des deux parties ne peut déclencher les hostilités, quel que soit l'échec des négociations.</li>
+                <li><span class="nom">Chef de poste (niv. 2) :</span> réaffecte les PNJ à volonté sans perte de loyauté ; chaque PNJ qu'il gère directement gagne +1 loyauté par semaine.</li>
+                <li><span class="nom">Mot d'ordre (niv. 5) :</span> en action bonus, un allié qui l'entend rejoue immédiatement une attaque ou un test raté (1 allié/round).</li>
+                <li><span class="nom">Discours (niv. 6) :</span> 2/jour, avant une phase de gestion ou un combat : Moral de colonie +1 pour la journée, ou tous les alliés gagnent +1 aux jets de sauvegarde pendant 1 minute.</li>
+                <li><span class="nom">Réputation vivante (niv. 8) :</span> ses échanges avec les factions sont toujours d'un cran favorable (une Réputation −1 agit comme 0, une 2 comme 3).</li>
+                <li><span class="nom">Père de la colonie (niv. 10) :</span> le Moral de la colonie ne peut plus descendre sous 4 tant qu'il vit ; une fois par mois, il recrute automatiquement un PNJ qualifié attiré par sa réputation.</li>
+                <li><span class="nom">Voix de la raison (niv. 11) :</span> Médiation devient utilisable 3×/rencontre ; une faction qui parle avec lui ne peut pas rompre les négociations avant 10 minutes.</li>
+                <li><span class="nom">Institution (niv. 13) :</span> ses PNJ directs survivent aux pertes de Moral : aucune désertion tant qu'il est présent à la base, quel que soit le Moral.</li>
+                <li><span class="nom">Gouverneur (niv. 16) :</span> la phase de gestion qu'il dirige produit 1 unité supplémentaire sur chaque ressource produite ce jour-là (organisation parfaite des tâches).</li>
+                <li><span class="nom">Nation souterraine (niv. 17) :</span> recrute 2 PNJ qualifiés par mois ; le Moral de la colonie ne peut plus descendre sous 6.</li>
+                <li><span class="nom">Charisme légendaire (niv. 19) :</span> toutes les factions voient leur Réputation verrouillée au minimum 0 tant qu'il négocie ; une faction hostile qui le rencontre doit tenter la discussion avant l'attaque.</li>
+                <li><span class="nom">Fondateur (niv. 20) :</span> la colonie devient autonome sur le plan humain : Moral verrouillé à 8 minimum, les PNJ se recrutent seuls (1/jour de jeu), et une fois par campagne, il peut fusionner définitivement deux factions avec la colonie. La colonie porte son nom.</li>
+            </ul>
+            <div class="panier energie">
+                <h3>Spécialité A — Le Négociateur (commerce)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> tous les prix commerciaux décalés d'un cran favorable.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Marché signature » — une faction lui vend une ressource RARE (1×/mois, au prix du MJ) ; « Monnaie de confiance » — ses crédits valent double dans toute transaction.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Marché réseau » — peut commercer à distance par radio avec toute faction connue ; « Monopole » — une fois, force un accord commercial exclusif : une faction devient fournisseur permanent d'une ressource au choix.</li>
+                </ul>
+            </div>
+            <div class="panier energie">
+                <h3>Spécialité B — Le Stratège (guerre froide)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> connaît la prochaine action de chaque faction (1×/semaine).</li>
+                    <li><span class="nom">Niv. 10 :</span> « Contre-espionnage » — détection automatique d'un espion dans la base ; « Pacte » — force une alliance temporaire avec une faction hostile (1 semaine, une fois).</li>
+                    <li><span class="nom">Niv. 17 :</span> « Guerre de l'ombre » — lance des opérations clandestines (sabotage, vol de plans) via 1 jet de Persuasion par semaine ; « Échiquier planétaire » — il voit tous les projets de toutes les factions, en continu, et peut annuler une action de faction par semaine.</li>
+                </ul>
+            </div>
+            <div class="panier energie">
+                <h3>Spécialité C — Le Meneur d'hommes (cœur de la base)</h3>
+                <ul class="puces">
+                    <li><span class="nom">Niv. 3 :</span> les désertions sont impossibles tant qu'il est présent à la base.</li>
+                    <li><span class="nom">Niv. 10 :</span> « Volonté collective » — une fois par séance, un PNJ remplace un PJ absent ou mort pendant un combat (statblock Soldat, PV 10) ; « Colonie soudée » — le bonus de Moral ≥ 8 s'applique aussi aux jets d'attaque de la défense de la base.</li>
+                    <li><span class="nom">Niv. 17 :</span> « Milice » — en cas d'attaque de la base, chaque PNJ compte comme un soldat défenseur (CA 14, PV 8) ; « Dernier rempart » — une fois par campagne, quand la base tomberait, elle ne tombe pas : la défense repousse l'assaut au prix de 1D4 PNJ héroïques.</li>
+                </ul>
+            </div>
+
+            <p>Le multiclassage est possible au niveau 4 avec un minimum de 13 dans la caractéristique clé de la classe cible. Le dé de vie, les PV et les maîtrises restent ceux de la classe de départ.</p>
+        </section>
+
+        <section id="historiques">
+            <h2><span class="num">V.</span> Historique (avant le crash)</h2>
+            <p>Chaque personnage choisit un historique qui détermine ses économies d'équipement de départ (ce qui a survécu au crash dans son paquetage personnel) et un talent :</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Les huit historiques</caption>
+                    <thead>
+                        <tr><th>Historique</th><th>Talent</th><th>Équipement clé sauvé du crash</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Militaire</td><td>Une combinaison légère de combat</td><td>Fusil d'assaut (30 munitions), plaque de gilet</td></tr>
+                        <tr><td>Scientifique civil</td><td>Un carnet d'analyses</td><td>Scanner portable, 3 échantillons</td></tr>
+                        <tr><td>Ingénieur de bord</td><td>Un outil de fortune parfait</td><td>Boîte à outils, 2 pièces détachées</td></tr>
+                        <tr><td>Médecin d'urgence</td><td>Ordonnance improvisée</td><td>Kit médical complet</td></tr>
+                        <tr><td>Colono (perspective de peuplement)</td><td>Sens de la construction</td><td>Serre portative pliée, graines</td></tr>
+                        <tr><td>Pilote de ligne</td><td>Pilote polyvalent</td><td>Casque HUD, carte stellaire</td></tr>
+                        <tr><td>Mineur de ceinture</td><td>Sens du minerai</td><td>Détecteur de métaux, foreuse</td></tr>
+                        <tr><td>Contrebandier embarqué</td><td>Contacts douteux</td><td>Arme de poing cachée, 20 unités de « crédits d'échange »</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panier">
+                <h3>Personnalité, idéal, lien, défaut</h3>
+                <p>Gardez le modèle 5e ; le <span class="nom">lien</span> devient idéalement un équipier PNJ, un objet de la mission ou une promesse faite avant le crash.</p>
+            </div>
+
+            <div class="panier alerte">
+                <h3>Équipement de départ : le crash</h3>
+                <p>Le crash a détruit 80 % du matériel de la mission. Chaque personnage garde : son arme de fonction, son historique (table ci-dessus), un paquetage léger, et <span class="nom">la moitié de ses batteries et rations</span>. Le reste se récupère dans l'épave, au fil des expéditions.</p>
+            </div>
+        </section>
+
+        <section id="dons">
+            <h2><span class="num">VI.</span> Dons</h2>
+            <p>Aux niveaux où la table de progression indique <span class="nom">Amélioration de caractéristique</span> ou <span class="nom">Amélioration</span>, le joueur choisit : <span class="nom">+2 de caractéristiques</span> (répartis librement) <span class="nom">ou 1 don</span>. Un don peut être choisi une seule fois, sauf mention contraire.</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Les seize dons</caption>
+                    <thead>
+                        <tr><th>Don</th><th>Effet</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tireur d'élite</td><td>Recharge en action bonus ; ignore le désavantage de portée maximale s'il n'a pas bougé depuis son dernier tour</td></tr>
+                        <tr><td>Endurance</td><td>PV max +2 par niveau ; ignore 1 niveau d'épuisement par jour</td></tr>
+                        <tr><td>Vigilance</td><td>+5 à l'initiative ; ne peut pas être surpris tant qu'il est conscient</td></tr>
+                        <tr><td>Médecin de campagne</td><td>Stabilise à 6 po avec un kit ; 1×/jour, soigne 1D4 PV sans consommer de MED</td></tr>
+                        <tr><td>Bricoleur</td><td>Fabrique des objets improvisés sans test ; en combat, une improvisation simple se fait en 1 action</td></tr>
+                        <tr><td>Voyageur efficient</td><td>Sa consommation de voyage (O₂, eau, rations) compte pour la moitié pour lui et son compagnon de binôme</td></tr>
+                        <tr><td>Chef de chantier</td><td>Travaillant seul sur un chantier, il avance comme 2 ouvriers</td></tr>
+                        <tr><td>Esprit méthodique</td><td>1×/jour, relance un jet de tâche ou de test d'artisanat raté</td></tr>
+                        <tr><td>Négociateur né</td><td>+2 sur Persuasion et Intimidation dans les négociations ; tous ses achats gagnent 1 unité de plus pour le même prix</td></tr>
+                        <tr><td>Survivant</td><td>Avantage sur les jets de sauvegarde contre le froid, la chaleur et l'air vicié</td></tr>
+                        <tr><td>Combattant en combinaison</td><td>Ignore tous les malus de combinaison ; +1 CA en combinaison étanche</td></tr>
+                        <tr><td>Coordonnier</td><td>L'action d'aide peut cibler un allié à 6 po ; l'allié aidé gagne aussi +1 à son jet</td></tr>
+                        <tr><td>Poigne de fer</td><td>Port de charges doublé ; avantage sur les tests de FOR pour briser, maintenir ou arrimer</td></tr>
+                        <tr><td>Gestionnaire de crise</td><td>1×/combat, en réaction quand un système de la base tombe en panne : annule la panne (la machine tient jusqu'à la fin du combat)</td></tr>
+                        <tr><td>Économe</td><td>Chaque fabrication qu'il réussit rend 1 unité d'une ressource engagée (au MJ de choisir laquelle)</td></tr>
+                        <tr><td>Sens du danger</td><td>Avantage sur les jets de sauvegarde de DEX ; se relève à terre pour 1 po de mouvement</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="progression">
+            <h2><span class="num">VII.</span> Progression et niveaux</h2>
+            <p>La progression est <span class="nom">lente et méritée</span>. On ne monte pas de niveau en tuant des monstres : on monte de niveau en <span class="nom">survivant, construisant et découvrant</span>.</p>
+            <ul class="puces">
+                <li><span class="nom">Expérience alternative — Jalons :</span> le MJ accorde un jalon (l'équivalent d'un palier) quand le groupe accomplit un objectif de survie majeur : survivre 7 jours, rendre la base autonome en oxygène, réparer un système critique, explorer une nouvelle région, gagner ou perdre une faction, percer un secret de la planète.</li>
+                <li><span class="nom">Paliers :</span> niveaux 2 à 20 = respectivement 1, 1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 12 jalons.</li>
+                <li><span class="nom">Amélioration de caractéristique</span> aux niveaux 4, 9, 12, 15 et 18 : +2 à répartir sur les caractéristiques, ou 1 don.</li>
+                <li><span class="nom">PV maximum :</span> un personnage à 0 PV dont les dés de vie sont épuisés et les soins absents peut mourir (voir Mort et remplacement ci-dessous).</li>
+            </ul>
+            <div class="chiffres">
+                <div class="chiffre">
+                    <span class="valeur">+2</span>
+                    <span class="legende">bonus de maîtrise, niv. 1–4</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">+3</span>
+                    <span class="legende">bonus de maîtrise, niv. 5–8</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">+4</span>
+                    <span class="legende">bonus de maîtrise, niv. 9–12</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">+5</span>
+                    <span class="legende">bonus de maîtrise, niv. 13–16</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">+6</span>
+                    <span class="legende">bonus de maîtrise, niv. 17–20</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="mort">
+            <h2><span class="num">VIII.</span> Mort et remplacement des personnages</h2>
+            <div class="panier alerte">
+                <h3>La mort est définitive</h3>
+                <p>Pas de résurrection, pas de réincarnation.</p>
+            </div>
+            <p>Le joueur d'un personnage mort :</p>
+            <ul class="puces">
+                <li><span class="nom">Reprend un PNJ de la colonie,</span> promu personnage joueur (génère un archétype de niveau −1 par rapport au défunt, minimum 1) ; ou</li>
+                <li><span class="nom">Crée un nouveau survivant</span> découvert peu après (capsule, cryostase, faction alliée) ; ou</li>
+                <li><span class="nom">Joue un éclaireur</span> d'une faction alliée détaché auprès de la colonie.</li>
+            </ul>
+            <div class="panier bio">
+                <h3>Héritage</h3>
+                <p>Les notes, plans et le journal du mort restent dans la base — la colonie garde ce que le mort a construit. C'est la vraie immortalité de Dernier Horizon.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site">
+        <div class="pied">
+            <span class="sceau">Dernier Horizon</span>
+            <span>Jeu de rôle de survie spatiale</span>
+            <span>Basé sur les mécaniques de D&D 5e</span>
+        </div>
+    </footer>
+</body>
+</html>

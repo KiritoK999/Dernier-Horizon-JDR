@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DERNIER HORIZON — exploration et dangers : voyages, biomes, bestiaire extraterrestre, factions humaines, combat sur table, santé et blessures, météo et événements planétaires.">
+    <title>DERNIER HORIZON — Exploration & Dangers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./favicon.png">
+</head>
+<body>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <div class="bandeau-haut"></div>
+
+    <header class="site">
+        <div class="titre-site">
+            <span class="sigille">DH</span>
+            <h1>Dernier Horizon</h1>
+        </div>
+        <div class="sous-titre">Jeu de rôle de survie spatiale — Basé sur les mécaniques de D&D 5e</div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="regles.html">Règles</a></li>
+                <li><a href="personnages.html">Personnages</a></li>
+                <li><a href="colonie.html">Colonie</a></li>
+                <li><a href="exploration.html" class="actif">Exploration</a></li>
+                <li><a href="mj.html">Outils MJ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenu">
+        <ul class="ancres">
+            <li><a href="#exploration">Exploration</a></li>
+            <li><a href="#biomes">Biomes</a></li>
+            <li><a href="#bestiaire">Bestiaire</a></li>
+            <li><a href="#factions">Factions</a></li>
+            <li><a href="#combat">Combat</a></li>
+            <li><a href="#sante">Santé</a></li>
+            <li><a href="#meteo">Météo</a></li>
+        </ul>
+
+        <section id="exploration">
+            <h2><span class="num">I.</span> Exploration</h2>
+            <p>La planète est grande et partiellement inconnue. Le MJ dessine une <span class="nom">carte hexagonale</span> (hex de 10 km). Au départ, seuls l'épave et 2–3 hex environnants sont connus.</p>
+            <div class="chiffres">
+                <div class="chiffre">
+                    <span class="valeur">20</span>
+                    <span class="legende">km/jour à pied (30 plat, 10 montagne/dunes)</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">80</span>
+                    <span class="legende">km/jour en buggy (1 CARB/jour)</span>
+                </div>
+                <div class="chiffre">
+                    <span class="valeur">40</span>
+                    <span class="legende">km/jour en transporteur (2 CARB/jour, lourd)</span>
+                </div>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Résolution d'un hex inconnu :</span> à l'arrivée, le MJ décrit le biome (table ci-dessous) puis, en cas d'exploration active, lance les tables de rencontres et de découvertes (voir Outils MJ).</li>
+                <li><span class="nom">Navigation :</span> Survie DD 12/jour de voyage ; échec = 10 km de dérive ou 1D4 h perdues (consommation d'O₂).</li>
+                <li><span class="nom">Surprise :</span> Perception opposée à Discrétion de la faune ; le MJ applique l'avantage si l'équipe est bruyante (générateurs, véhicules).</li>
+                <li><span class="nom">Épuisement de voyage :</span> chaque jour en combinaison, test CON DD 12 ; échec = 1 niveau d'épuisement léger.</li>
+            </ul>
+        </section>
+
+        <section id="biomes">
+            <h2><span class="num">II.</span> Biomes types</h2>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Les biomes de la planète</caption>
+                    <thead>
+                        <tr><th>Biome</th><th>Ressources clés</th><th>Dangers types</th><th>Découvertes possibles</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Plaines de régolithe</td><td>ALL (minerai affleurant)</td><td>Vents, tempêtes de poussière</td><td>Balises, épaves</td></tr>
+                        <tr><td>Désert de dunes</td><td>Carburant fossile, silex</td><td>Chaleur, mirages, faune enfouie</td><td>Ruines ensevelies</td></tr>
+                        <tr><td>Montagnes</td><td>ALL, RARE (filons)</td><td>Chutes, froid, prédateurs aériens</td><td>Grottes, observatoires anciens</td></tr>
+                        <tr><td>Forêt de spores</td><td>BIO en abondance</td><td>Toxines, parasites, organismes imiteurs</td><td>Structures végétales étranges</td></tr>
+                        <tr><td>Marais</td><td>BIO, eau (filtration)</td><td>Maladies, prédateurs aquatiques</td><td>Épaves englouties</td></tr>
+                        <tr><td>Océan / mer</td><td>Eau (glace, poisson), sel</td><td>Noyade, faune abyssale</td><td>Plateformes, cités extraterrestres sous-marines</td></tr>
+                        <tr><td>Grottes</td><td>ALL, COM (cristaux)</td><td>Éboulements, obscurité, faune aveugle</td><td>Gisements RARE, ruines profondes</td></tr>
+                        <tr><td>Zone radioactive</td><td>RARE, COM</td><td>Radiations, faune mutée</td><td>Technologies militaires</td></tr>
+                        <tr><td>Zone volcanique</td><td>ÉNE géothermique, ALL rare</td><td>Lave, séismes, chaleur</td><td>Nodules extraterrestres</td></tr>
+                        <tr><td>Cratère</td><td>RARE (météoriques)</td><td>Instabilité du sol</td><td>Débris d'origine non-humaine</td></tr>
+                        <tr><td>Ruines extraterrestres</td><td>RARE, COM, plans</td><td>Pièges, gardiens biologiques</td><td>Technologies niv. 4–5, secrets de campagne</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="bestiaire">
+            <h2><span class="num">III.</span> Bestiaire</h2>
+            <p>Les créatures ont une écologie : elles ne se résument pas à des sacs de PV. Chacune a un habitat, un régime, un comportement face aux humains, des proies, des prédateurs et un butin.</p>
+
+            <div class="panier eau">
+                <h3>Rôdeur à plaques</h3>
+                <p class="metier">Moyen · Menace 1</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">CA</span><span class="val">14 (plaques)</span></div>
+                    <div class="ligne"><span class="cle">PV</span><span class="val">22</span></div>
+                    <div class="ligne"><span class="cle">Vitesse</span><span class="val">6 po</span></div>
+                    <div class="ligne"><span class="cle">Caractéristiques</span><span class="val">For 14, Dex 12, Con 14, Int 2, Sag 10, Cha 4</span></div>
+                    <div class="ligne"><span class="cle">Sens</span><span class="val">Vibrations</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> prédateur solitaire opportuniste ; attaque les isolés, fuit les groupes armés.</li>
+                    <li><span class="nom">Faiblesse :</span> bruit sourd (fuite sur jet SAG DD 12).</li>
+                    <li><span class="nom">Butin :</span> 2 ALL (plaques), 1 BIO.</li>
+                </ul>
+            </div>
+
+            <div class="panier eau">
+                <h3>Écume-ciel</h3>
+                <p class="metier">Grand · Menace 2</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">CA</span><span class="val">12</span></div>
+                    <div class="ligne"><span class="cle">PV</span><span class="val">38</span></div>
+                    <div class="ligne"><span class="cle">Vitesse</span><span class="val">Vol 12 po</span></div>
+                    <div class="ligne"><span class="cle">Caractéristiques</span><span class="val">Dex 16, For 12</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> chasse en piqué dans les zones ouvertes ; niche dans les falaises.</li>
+                    <li><span class="nom">Faiblesse :</span> vulnérable en sol (désavantage).</li>
+                    <li><span class="nom">Butin :</span> 2 BIO (membranes), viseur naturel (1 COM).</li>
+                </ul>
+            </div>
+
+            <div class="panier bio">
+                <h3>Colonne rampante</h3>
+                <p class="metier">Énorme · Menace 3</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">CA</span><span class="val">15</span></div>
+                    <div class="ligne"><span class="cle">PV</span><span class="val">76</span></div>
+                    <div class="ligne"><span class="cle">Vitesse</span><span class="val">4 po</span></div>
+                    <div class="ligne"><span class="cle">Caractéristiques</span><span class="val">Con 18</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> herbivore géant indifférent — dangereux seulement s'il est blessé ou effrayé ; piétine les campements.</li>
+                    <li><span class="nom">Faiblesse :</span> sensible aux sons graves.</li>
+                    <li><span class="nom">Butin :</span> 1D6 BIO, 1 RARE (organe de régulation thermique).</li>
+                </ul>
+            </div>
+
+            <div class="panier eau">
+                <h3>Rôdeur de meute cendré</h3>
+                <p class="metier">Petit · Menace 2 (groupe) · Meute de 4–7</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">CA</span><span class="val">13</span></div>
+                    <div class="ligne"><span class="cle">PV</span><span class="val">11 chacun</span></div>
+                    <div class="ligne"><span class="cle">Vitesse</span><span class="val">8 po</span></div>
+                    <div class="ligne"><span class="cle">Caractéristiques</span><span class="val">Dex 15, Int 4, Sag 13</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> harcèle, isole, teste ; se retire à 50 % de pertes. Chasse au crépuscule.</li>
+                    <li><span class="nom">Faiblesse :</span> feux et lumières vives.</li>
+                    <li><span class="nom">Butin :</span> 1 BIO chacun.</li>
+                </ul>
+            </div>
+
+            <div class="panier alerte">
+                <h3>Ver des sables</h3>
+                <p class="metier">Énorme · Menace 4</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">CA</span><span class="val">16</span></div>
+                    <div class="ligne"><span class="cle">PV</span><span class="val">110</span></div>
+                    <div class="ligne"><span class="cle">Vitesse</span><span class="val">Fouit 10 po</span></div>
+                    <div class="ligne"><span class="cle">Caractéristiques</span><span class="val">For 20</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> suit les vibrations ; attaque les véhicules et foreurs.</li>
+                    <li><span class="nom">Faiblesse :</span> explosifs soniques, sols rocheux.</li>
+                    <li><span class="nom">Butin :</span> 4 BIO, 2 RARE (dents de cristal).</li>
+                </ul>
+            </div>
+
+            <div class="panier bio">
+                <h3>Sporule</h3>
+                <p class="metier">Minuscule · Menace 1 (nuée)</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">PV</span><span class="val">PV de nuée (10, immunité aux armes de mêlée)</span></div>
+                    <div class="ligne"><span class="cle">Dégâts</span><span class="val">Intoxication 1D6/tour si approché</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> plante, pas un animal — ne poursuit pas ; déclenche ses spores à l'approche et à la chaleur.</li>
+                    <li><span class="nom">Faiblesse :</span> froid.</li>
+                    <li><span class="nom">Butin :</span> 2 BIO (toxine utilisable au craft).</li>
+                </ul>
+            </div>
+
+            <div class="panier eau">
+                <h3>Piqueur de caverne</h3>
+                <p class="metier">Moyen · Menace 2</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">CA</span><span class="val">14</span></div>
+                    <div class="ligne"><span class="cle">PV</span><span class="val">26</span></div>
+                    <div class="ligne"><span class="cle">Vitesse</span><span class="val">Grimpe 6 po</span></div>
+                    <div class="ligne"><span class="cle">Caractéristiques</span><span class="val">Dex 16</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> parasite ; s'attache aux victimes affaiblies et pompe 1D4 PV + dégâts de Constitution.</li>
+                    <li><span class="nom">Faiblesse :</span> lumière vive.</li>
+                    <li><span class="nom">Butin :</span> 1 BIO (anticoagulant : 1 MED).</li>
+                </ul>
+            </div>
+
+            <div class="panier alerte">
+                <h3>Organisme imiteur</h3>
+                <p class="metier">Moyen · Menace 4</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">CA</span><span class="val">15</span></div>
+                    <div class="ligne"><span class="cle">PV</span><span class="val">45</span></div>
+                    <div class="ligne"><span class="cle">Caractéristiques</span><span class="val">Int 6, Cha 8</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> imite les formes connues (rocher, caisse, équipier mort) et attend. Repérage : Perception DD 16 (avantage si le joueur décrit un détail incohérent).</li>
+                    <li><span class="nom">Faiblesse :</span> scanners thermiques.</li>
+                    <li><span class="nom">Butin :</span> 2 BIO, 1 RARE (tissu mimétique — 1 COM).</li>
+                </ul>
+            </div>
+
+            <div class="panier energie">
+                <h3>Gardien de ruine (bio-mécanique)</h3>
+                <p class="metier">Grand · Menace 5</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">CA</span><span class="val">17</span></div>
+                    <div class="ligne"><span class="cle">PV</span><span class="val">130</span></div>
+                    <div class="ligne"><span class="cle">Vitesse</span><span class="val">6 po</span></div>
+                    <div class="ligne"><span class="cle">Caractéristiques</span><span class="val">Int 8</span></div>
+                    <div class="ligne"><span class="cle">Attaques</span><span class="val">Armes intégrées : 3 attaques, D10 énergétiques</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> ne quitte jamais sa structure ; attaque toute intrusion.</li>
+                    <li><span class="nom">Faiblesse :</span> sa source d'énergie (PdD 20, révélée par Science DD 18).</li>
+                    <li><span class="nom">Butin :</span> 2 RARE, 4 COM, plans Tech 4–5.</li>
+                </ul>
+            </div>
+
+            <div class="panier eau">
+                <h3>Nuée-pirate</h3>
+                <p class="metier">Volante · Menace 2</p>
+                <div class="fiche-tech">
+                    <div class="ligne"><span class="cle">PV</span><span class="val">20 de nuée</span></div>
+                    <div class="ligne"><span class="cle">Vitesse</span><span class="val">Vol 20 po</span></div>
+                </div>
+                <ul class="puces">
+                    <li><span class="nom">Comportement :</span> attirée par les champs électromagnétiques ; court-circuite les machines (1D4 PdD/round aux machines à 2 po).</li>
+                    <li><span class="nom">Faiblesse :</span> impulsion EMP.</li>
+                    <li><span class="nom">Butin :</span> 1 COM.</li>
+                </ul>
+            </div>
+
+            <h3>Écologie pour le MJ</h3>
+            <ul class="puces">
+                <li>Avant toute rencontre, répondez à : où vit-il ? De quoi se nourrit-il ? Que craint-il ? Que gagnent les joueurs à le tuer — et à le laisser vivre ?</li>
+                <li><span class="nom">Dépeçage :</span> 30 min/animal, jet Survie ou Science DD 13 ; échec = moitié du butin. Le butin BIO fournit des recettes médicinales et des toxines.</li>
+                <li><span class="nom">Déséquilibre écologique :</span> tuer trop de prédateurs fait exploser les populations d'herbivores, qui ravagent les serres ; empoisonner un point d'eau tue la faune à des kilomètres. Le MJ doit le faire sentir.</li>
+            </ul>
+        </section>
+
+        <section id="factions">
+            <h2><span class="num">IV.</span> Astronautes ennemis et factions</h2>
+            <h3>Origines possibles des autres humains</h3>
+            <p>Survivants d'une autre capsule, mission militaire rivale, scientifiques isolés, mercenaires en route vers un contrat abandonné, pirates des ceintures, colons d'une mission précédente disparue, membres d'une organisation inconnue (selon l'esprit de campagne du MJ).</p>
+            <h3>Système de factions</h3>
+            <p>Chaque faction a une fiche :</p>
+            <ul class="puces">
+                <li><span class="nom">Effectif</span> (combien de combattants) · <span class="nom">Base</span> (où) · <span class="nom">Doctrine</span> (agressive, commerçante, xénophobe, scientifico-fanatique…) · <span class="nom">Atouts</span> (matériel, véhicule, tech) · <span class="nom">Besoins</span> (ce qui les motive) · <span class="nom">Réputation</span> (−5 à +5) envers les joueurs.</li>
+            </ul>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Réputation et réaction standard</caption>
+                    <thead>
+                        <tr><th>Échelon</th><th>Réaction standard</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>−5 / −4</td><td>Hostile : attaque à vue, sabotages nocturnes</td></tr>
+                        <tr><td>−3 / −2</td><td>Hostile : menaces, extorsion, escarmouches</td></tr>
+                        <tr><td>−1</td><td>Méfiant : peut négocier sous condition</td></tr>
+                        <tr><td>0</td><td>Neutre : observé, contact prudent possible</td></tr>
+                        <tr><td>+1 / +2</td><td>Ouvert : commerce, échange d'informations</td></tr>
+                        <tr><td>+3 / +4</td><td>Allié : missions communes, prêts de matériel</td></tr>
+                        <tr><td>+5</td><td>Intégré : fusion possible des deux groupes</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="puces">
+                <li><span class="nom">Évolution :</span> chaque action notable vaut ±1 (commerce honnête, sauvetage, cadeaux, trahison, vol, meurtre). L'échec d'une promesse double le malus.</li>
+                <li><span class="nom">Commerce :</span> prix de référence — 1 RARE ≈ 10 ALL ≈ 20 jr d'équivalent ; les factions vendent ce qu'elles produisent et achètent ce qui leur manque. Une Persuasion réussie (DD 10 + Réputation opposée) décale les prix d'un cran favorable.</li>
+            </ul>
+            <div class="panier alerte">
+                <h3>Infiltration et espionnage</h3>
+                <p>Une faction alliée de façade (Réputation apparente ≠ réelle) peut : voler 5 % des stocks/jour, cartographier la base, saboter une machine, recruter un PNJ déloyal.</p>
+                <p><span class="nom">Indices pour les joueurs :</span> écarts de stock, marque de craie inconnue, PNJ épuisé sans raison.</p>
+            </div>
+        </section>
+
+        <section id="combat">
+            <h2><span class="num">V.</span> Combat</h2>
+            <p>Le combat 5e s'applique, avec les règles d'armes et d'environnement suivantes.</p>
+            <h3>Jeu sur table</h3>
+            <ul class="puces">
+                <li>Le combat se joue avec des figurines sur table, en mesurant les distances en pouces au mètre ruban : <span class="nom">1 po ≈ 1,5 m</span>. Pas de grille ni de cases.</li>
+                <li><span class="nom">Portées :</span> un tireur à portée normale attaque sans malus ; au-delà et jusqu'à la portée maximale, attaque avec désavantage ; au-delà de la portée maximale, tir impossible.</li>
+                <li><span class="nom">Zones :</span> grenades et explosions = gabarit circulaire de 2 po ; lance-flammes = gabarit cône de 4 po ; suppression = gabarit de 2 po sur la zone arrosée.</li>
+                <li><span class="nom">Engagement en mêlée :</span> une figurine ennemie à 1 po ou moins vous engage en mêlée.</li>
+                <li><span class="nom">Assaut dans la base :</span> chaque module se joue sur une carte d'au moins 6 po de côté — l'échelle tactique prime sur l'échelle du plan.</li>
+                <li><span class="nom">À la marge</span> (sans figurines), le MJ peut tout résoudre en narration libre : les valeurs en po servent alors de repères.</li>
+            </ul>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Propriétés d'armes à feu</caption>
+                    <thead>
+                        <tr><th>Arme</th><th>Dégâts</th><th>Portée</th><th>Cadence</th><th>Chargeur</th><th>Notes</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Pistolet de service</td><td>1D8</td><td>20/60</td><td>1</td><td>12</td><td>Une main</td></tr>
+                        <tr><td>Fusil d'assaut</td><td>1D10</td><td>55/160</td><td>1 / burst</td><td>30</td><td>Deux mains</td></tr>
+                        <tr><td>Fusil de précision</td><td>2D8</td><td>200/600</td><td>1</td><td>5</td><td>Précis : avantage si position immobile</td></tr>
+                        <tr><td>Fusil à pompe</td><td>2D6</td><td>10/30</td><td>1</td><td>6</td><td>Dispersion : +2 attaque à courte portée</td></tr>
+                        <tr><td>Lance-grenades</td><td>2D10 (zone 2 po, DD 15 DEX moitié)</td><td>40/120</td><td>1</td><td>4</td><td>Deux mains, recharge = action</td></tr>
+                        <tr><td>Pistolet énergétique</td><td>1D12</td><td>15/40</td><td>1</td><td>10 charges (1 batterie)</td><td>Silencieux</td></tr>
+                        <tr><td>Fusil laser militaire</td><td>2D6</td><td>65/200</td><td>1 / burst</td><td>20 charges</td><td>Ignoré par l'armure énergétique (CA −2)</td></tr>
+                        <tr><td>Lance-flammes</td><td>4D6, cône 4 po, DD 15 DEX moitié</td><td>3</td><td>—</td><td>10 unités CARB</td><td>Brûlures</td></tr>
+                        <tr><td>Mêlée : hachette</td><td>1D6</td><td>—</td><td>—</td><td>—</td><td>Une main</td></tr>
+                        <tr><td>Mêlée : masse d'abattage</td><td>1D8</td><td>—</td><td>—</td><td>—</td><td>Prise en main : 1D4</td></tr>
+                        <tr><td>Mêlée : monofilament (élite)</td><td>2D6</td><td>—</td><td>—</td><td>—</td><td>Perce l'armure non-énergétique (CA −2)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Cadence : 1 tir = 1 attaque ; burst = +2 dégâts, 2 munitions ; auto = zone.</p>
+            <h3>Règles d'environnement</h3>
+            <ul class="puces">
+                <li><span class="nom">Couvert :</span> léger −2 / lourd −5 sur les attaques à distance ; position couchée : −2 contre les attaques à distance à 20 po et plus.</li>
+                <li><span class="nom">Suppressions :</span> une zone arrosée automatiquement impose un DD 10 DEX pour traverser.</li>
+                <li><span class="nom">Combinaison et combat :</span> en combinaison, les jets de DEX offensifs subissent −2 (combinaisons modernes : aucun malus, mais discrétion −2).</li>
+                <li><span class="nom">Dépressurisation :</span> une brèche ouvre : round 1 aspiration (DD 12 FOR pour s'agripper) ; round 2 et suivants, jusqu'au colmatage : tous les objets non arrimés s'envolent ; un personnage non attaché doit s'agripper chaque round (DD 15 si la brèche fait 1 po ou plus).</li>
+                <li><span class="nom">Zéro gravité (optionnel) :</span> déplacement par poussée (DEX ou FOR, 6 po), pas de « tombé à terre », les munitions en tir soutenu causent une dérive.</li>
+                <li><span class="nom">Véhicules :</span> un véhicule a une CA, des PV, des PdD et un nombre de places ; le pilote fait des jets de DEX pour les manœuvres ; les passagers tirent avec −2 sans support embarqué.</li>
+                <li><span class="nom">Drones :</span> un opérateur peut dépenser son action pour diriger chaque drone ; un drone autonome (Investigation DD 14 au départ) suit un ordre simple (« patrouille et alerte »).</li>
+                <li><span class="nom">Dureté du combat :</span> les créatures de Menace 3+ frappent fort ; un personnage à 0 PV suit la règle des jets de mort — les coups de grâce par arme lourde contournent les points de vie de réserve.</li>
+            </ul>
+            <h3>Munitions et rechargement</h3>
+            <p>Recharger = action (1 attaque avec action bonus si l'archétype le permet). Un chargeur à moitié vide ne garde pas le compte pour les joueurs — comptez les chargeurs complets et les chargeurs en cours ; les munitions sont une ressource.</p>
+        </section>
+
+        <section id="sante">
+            <h2><span class="num">VI.</span> Santé et blessures</h2>
+            <h3>Points de vie et blessures persistantes</h3>
+            <p>Les PV couvrent la fatigue et les égratignures ; certaines blessures laissent une <span class="nom">séquelle temporaire</span>. Une séquelle disparaît après les jours de soins indiqués (réduits de moitié en infirmerie active, ou annulés par une intervention chirurgicale réussie DD 15).</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Blessures et séquelles</caption>
+                    <thead>
+                        <tr><th>Blessure</th><th>Déclencheur</th><th>Effet</th><th>Guérison</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Fracture</td><td>Chute de 2 po+, dégâts contondants ≥ 10 en un coup</td><td>Vitesse −2 po, désavantage FOR/DEX</td><td>20 jours / chirurgie</td></tr>
+                        <tr><td>Brûlure</td><td>Feu, plasma, acide</td><td>−1 PV max par tranche</td><td>10 jours</td></tr>
+                        <tr><td>Hémorragie</td><td>Dégâts perçants ≥ 12</td><td>1D4/tour jusqu'à bandage (Médecine DD 12)</td><td>—</td></tr>
+                        <tr><td>Traumatisme crânien</td><td>Tomber inconscient par dégâts</td><td>Désavantage INT, mémoire floue</td><td>15 jours</td></tr>
+                        <tr><td>Infection</td><td>Non traité après combat (DD 12 CON/jour, 2 échecs)</td><td>Empoisonné, 1D6/jour, puis septicémie (DD 15)</td><td>Antibiotiques</td></tr>
+                        <tr><td>Hypothermie</td><td>Exposition au froid</td><td>Niveaux d'épuisement, vitesse réduite</td><td>Chaleur + 8 h</td></tr>
+                        <tr><td>Syndrome radiatif</td><td>Zone radioactive (dosimètre)</td><td>1D4 dégâts PV max/jour d'exposition ; à 20 cumulés : mort imminente</td><td>Iode + infirmerie, lente</td></tr>
+                        <tr><td>Parasite extraterrestre</td><td>Contact biologique (DD 13 CON)</td><td>1 PV/jour, symptômes, peut croître</td><td>Chirurgie DD 15, 1 RARE</td></tr>
+                        <tr><td>Maladie inconnue</td><td>MJ (spores, eau, organisme)</td><td>Variable ; la recherche donne le remède</td><td>—</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panier bio">
+                <h3>Maladies extraterrestres</h3>
+                <p>Les maladies inconnues sont des <span class="nom">mini-intrigues</span> : symptômes observables, propagation possible, remède découvert par le laboratoire (recherche courte DD 13 Science). Une maladie non traitée tue en 1D6+2 jours.</p>
+            </div>
+            <h3>Premiers soins et médecine</h3>
+            <ul class="puces">
+                <li><span class="nom">Stabiliser un mourant :</span> Médecine DD 12 (kit : DD 10, avantage).</li>
+                <li><span class="nom">Soins de récupération :</span> 1 utilisation du kit médical = 1D4+2 PV ; reconstruire un kit coûte 1 MED + 1 ALL.</li>
+                <li><span class="nom">Chirurgie :</span> infirmerie + 1 h + DD 15 Médecine : retire une séquelle, restaure des PV = dés de vie + mod. CON ; échec de 5+ : 1D6 dégâts et séquelle.</li>
+                <li><span class="nom">Repos long :</span> rend tous les dés de vie et la moitié des PV manquants seulement si air + chaleur + sécurité ; dans la nature : un tiers des PV, 1 dé de vie.</li>
+            </ul>
+            <h3>À 0 point de vie</h3>
+            <p>Comme en 5e : inconscient, jets de mort (DD 10 ; 3 réussites = stable, 3 échecs = mort, 1 = mourant).</p>
+        </section>
+
+        <section id="meteo">
+            <h2><span class="num">VII.</span> Météo et événements planétaires</h2>
+            <p>Le MJ tire la météo chaque jour (ou à son goût) et déclare chaque saison sur un cycle de 3 mois de jeu.</p>
+            <div class="tableau-wrap">
+                <table class="tableau large">
+                    <caption>Table météo journalière (D20)</caption>
+                    <thead>
+                        <tr><th>D20</th><th>Météo</th><th>Effets</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1–5</td><td>Clair</td><td>Rien</td></tr>
+                        <tr><td>6–7</td><td>Brise</td><td>Rien</td></tr>
+                        <tr><td>8–9</td><td>Vents violents</td><td>Voyages à pied −10 km ; drones −2</td></tr>
+                        <tr><td>10–11</td><td>Froid extrême</td><td>Hypothermie hors base ; énergie +20 % (chauffage)</td></tr>
+                        <tr><td>12</td><td>Chaleur extrême</td><td>2 je d'eau/jour/personne ; batteries +1 usure</td></tr>
+                        <tr><td>13–14</td><td>Pluie</td><td>Visibilité réduite ; voyages à pied −10 km</td></tr>
+                        <tr><td>15</td><td>Pluie acide</td><td>Dégâts 1/heure hors abri aux humains et aux véhicules (1 PdD/h)</td></tr>
+                        <tr><td>16</td><td>Tempête de poussière</td><td>Voyages impossibles (exploration nulle) ; communication coupée ; combinaison étanche exigée</td></tr>
+                        <tr><td>17</td><td>Tempête électrique</td><td>Énergie solaire nulle ; électronique : test de Fiabilité ou 1D4 PdD ; foudre (1 sur D6/h en extérieur)</td></tr>
+                        <tr><td>18</td><td>Séisme / éruption proche</td><td>Bâtiments : test de structure ; routes coupées ; faune en panique</td></tr>
+                        <tr><td>19</td><td>Éruption solaire</td><td>Communications mortes 1D3 jours ; électronique endommagée sur 1–2/D6 ; énergie solaire ×2 le lendemain</td></tr>
+                        <tr><td>20</td><td>Phénomène extraterrestre (aurores vivantes, migration, signal)</td><td>MJ : intrigue de campagne, créatures attirées, RARE temporairement accessibles</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Saisons</h3>
+            <p>Chaque saison module les tables :</p>
+            <div class="colonnes">
+                <div class="panier alerte">
+                    <h3>Tempête</h3>
+                    <p>Météo +2 crans de danger, énergie solaire −50 %.</p>
+                </div>
+                <div class="panier eau">
+                    <h3>Frigide</h3>
+                    <p>Chauffage +30 %, eau gelée.</p>
+                </div>
+                <div class="panier">
+                    <h3>Équinoxiale</h3>
+                    <p>Normal.</p>
+                </div>
+                <div class="panier bio">
+                    <h3>Floraison</h3>
+                    <p>BIO ×2, faune active et nombreuse.</p>
+                </div>
+            </div>
+            <div class="citation">
+                « Annoncez la saison à venir 2 semaines à l'avance : la planète prévient toujours, un peu. »
+                <span class="attribution">— Conseil au Maître du Jeu</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site">
+        <div class="pied">
+            <span class="sceau">Dernier Horizon</span>
+            <span>Jeu de rôle de survie spatiale</span>
+            <span>Basé sur les mécaniques de D&D 5e</span>
+        </div>
+    </footer>
+</body>
+</html>
